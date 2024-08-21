@@ -34,7 +34,7 @@
           <value name="is_global">false</value>
           <value name="rec_closed">true</value>
           <value name="modifiable">true</value>
-          <value name="rec_ref">wmio.b2b.coty.interfaces.common.doc:SHIPPING_ORDER_DOWNLOAD_IWAY_OUP</value>
+          <value name="rec_ref">b2b.coty.interfaces.common.doc:SHIPPING_ORDER_DOWNLOAD_IWAY_OUP</value>
         </record>
         <record javaclass="com.wm.util.Values">
           <value name="node_type">record</value>
@@ -118,7 +118,6 @@
   <value name="prefetch">no</value>
   <value name="cache_ttl">15</value>
   <value name="prefetch_level">1</value>
-  <value name="template_type">html</value>
   <value name="audit_level">off</value>
   <value name="check_internal_acls">no</value>
   <value name="icontext_policy">$null</value>
@@ -148,7 +147,6 @@
     <value name="cancelThreadOnTimeout">false</value>
   </record>
   <array name="allowedHTTPMethods" type="value" depth="1">
-    <value>TRACE</value>
     <value>HEAD</value>
     <value>DELETE</value>
     <value>POST</value>

@@ -5,6 +5,511 @@
 
   <!-- nodes -->
 
+<INVOKE TIMEOUT="" SERVICE="pub.xml:xmlStringToXMLNode" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP MODE="INPUT">
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_name">xmlStringToXMLNodeInput</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">xmldata</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">$filedata</value>
+        <value name="field_type">object</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">$filestream</value>
+        <value name="field_type">object</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">encoding</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">expandDTD</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <array name="field_options" type="value" depth="1">
+          <value>false</value>
+          <value>true</value>
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">isXML</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <array name="field_options" type="value" depth="1">
+          <value>false</value>
+          <value>true</value>
+          <value>autoDetect</value>
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">expandGeneralEntities</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <array name="field_options" type="value" depth="1">
+          <value>true</value>
+          <value>false</value>
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">validateXML</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <array name="field_options" type="value" depth="1">
+          <value>false</value>
+          <value>true</value>
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/xmldata;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;SHIPPING_ORDER_DOWNLOAD_IWAY_OUP&gt;&lt;CTRL_SEG&gt;&lt;TrnNam&gt;SHIPPING_ORDER_DOWNLOAD&lt;/TrnNam&gt;&lt;TrnVer&gt;1.0&lt;/TrnVer&gt;&lt;TrnTyp&gt;DELIVERY&lt;/TrnTyp&gt;&lt;SapEnv&gt;PS0&lt;/SapEnv&gt;&lt;PlantID&gt;AU01&lt;/PlantID&gt;&lt;StorageLoc&gt;1000&lt;/StorageLoc&gt;&lt;ADDRESS_SEG&gt;&lt;AdrTyp&gt;AG&lt;/AdrTyp&gt;&lt;HostAdrId&gt;0010514819&lt;/HostAdrId&gt;&lt;ILNNr&gt;&lt;/ILNNr&gt;&lt;AdrNam1&gt;Bourke Pharmacy&lt;/AdrNam1&gt;&lt;AdrNam2&gt;&lt;/AdrNam2&gt;&lt;AdrNam3&gt;DUB&lt;/AdrNam3&gt;&lt;AdrNam4&gt;&lt;/AdrNam4&gt;&lt;AdrLn1&gt;34 Oxley Street&lt;/AdrLn1&gt;&lt;AdrLn2&gt;&lt;/AdrLn2&gt;&lt;AdrLn3&gt;&lt;/AdrLn3&gt;&lt;AdrCty&gt;Bourke&lt;/AdrCty&gt;&lt;AdrDist&gt;&lt;/AdrDist&gt;&lt;AdrPsz&gt;2840&lt;/AdrPsz&gt;&lt;CtryName&gt;AU&lt;/CtryName&gt;&lt;RgnCod&gt;NSW&lt;/RgnCod&gt;&lt;PhnNum&gt;02 6872 2004&lt;/PhnNum&gt;&lt;FaxNum&gt;&lt;/FaxNum&gt;&lt;EmailAdr&gt;pharmacybourke@gmail.com&lt;/EmailAdr&gt;&lt;LocaleId&gt;EN&lt;/LocaleId&gt;&lt;VATregNo&gt;21 606 953 137&lt;/VATregNo&gt;&lt;CourierNo&gt;&lt;/CourierNo&gt;&lt;/ADDRESS_SEG&gt;&lt;ADDRESS_SEG&gt;&lt;AdrTyp&gt;WE&lt;/AdrTyp&gt;&lt;HostAdrId&gt;0010514819&lt;/HostAdrId&gt;&lt;ILNNr&gt;&lt;/ILNNr&gt;&lt;AdrNam1&gt;Bourke Pharmacy&lt;/AdrNam1&gt;&lt;AdrNam2&gt;&lt;/AdrNam2&gt;&lt;AdrNam3&gt;DUB&lt;/AdrNam3&gt;&lt;AdrNam4&gt;&lt;/AdrNam4&gt;&lt;AdrLn1&gt;34 Oxley Street&lt;/AdrLn1&gt;&lt;AdrLn2&gt;&lt;/AdrLn2&gt;&lt;AdrLn3&gt;&lt;/AdrLn3&gt;&lt;AdrCty&gt;Bourke&lt;/AdrCty&gt;&lt;AdrDist&gt;&lt;/AdrDist&gt;&lt;AdrPsz&gt;2840&lt;/AdrPsz&gt;&lt;CtryName&gt;AU&lt;/CtryName&gt;&lt;RgnCod&gt;NSW&lt;/RgnCod&gt;&lt;PhnNum&gt;02 6872 2004&lt;/PhnNum&gt;&lt;FaxNum&gt;&lt;/FaxNum&gt;&lt;EmailAdr&gt;pharmacybourke@gmail.com&lt;/EmailAdr&gt;&lt;LocaleId&gt;EN&lt;/LocaleId&gt;&lt;VATregNo&gt;21 606 953 137&lt;/VATregNo&gt;&lt;CourierNo&gt;&lt;/CourierNo&gt;&lt;/ADDRESS_SEG&gt;&lt;ADDRESS_SEG&gt;&lt;AdrTyp&gt;SP&lt;/AdrTyp&gt;&lt;HostAdrId&gt;0000137916&lt;/HostAdrId&gt;&lt;ILNNr&gt;&lt;/ILNNr&gt;&lt;AdrNam1&gt;STAR TRACK EXPRESS PTY LTD&lt;/AdrNam1&gt;&lt;AdrNam2&gt;&lt;/AdrNam2&gt;&lt;AdrNam3&gt;&lt;/AdrNam3&gt;&lt;AdrNam4&gt;&lt;/AdrNam4&gt;&lt;AdrLn1&gt;Level 10 111 Bourke Street&lt;/AdrLn1&gt;&lt;AdrLn2&gt;&lt;/AdrLn2&gt;&lt;AdrLn3&gt;&lt;/AdrLn3&gt;&lt;AdrCty&gt;Melbourne&lt;/AdrCty&gt;&lt;AdrDist&gt;&lt;/AdrDist&gt;&lt;AdrPsz&gt;3000&lt;/AdrPsz&gt;&lt;CtryName&gt;AU&lt;/CtryName&gt;&lt;RgnCod&gt;VIC&lt;/RgnCod&gt;&lt;PhnNum&gt;132345&lt;/PhnNum&gt;&lt;FaxNum&gt;(61)249658312&lt;/FaxNum&gt;&lt;EmailAdr&gt;remittances@startrack.com.au&lt;/EmailAdr&gt;&lt;LocaleId&gt;EN&lt;/LocaleId&gt;&lt;VATregNo&gt;&lt;/VATregNo&gt;&lt;CourierNo&gt;&lt;/CourierNo&gt;&lt;/ADDRESS_SEG&gt;&lt;ADDRESS_SEG&gt;&lt;AdrTyp&gt;OSO&lt;/AdrTyp&gt;&lt;HostAdrId&gt;1207&lt;/HostAdrId&gt;&lt;ILNNr&gt;0000000000000&lt;/ILNNr&gt;&lt;AdrNam1&gt;Australia Con.Beauty&lt;/AdrNam1&gt;&lt;AdrNam2&gt;&lt;/AdrNam2&gt;&lt;AdrNam3&gt;&lt;/AdrNam3&gt;&lt;AdrNam4&gt;&lt;/AdrNam4&gt;&lt;AdrLn1&gt;Level 31, 1 Market St&lt;/AdrLn1&gt;&lt;AdrLn2&gt;&lt;/AdrLn2&gt;&lt;AdrLn3&gt;&lt;/AdrLn3&gt;&lt;AdrCty&gt;Sydney&lt;/AdrCty&gt;&lt;AdrDist&gt;&lt;/AdrDist&gt;&lt;AdrPsz&gt;2000&lt;/AdrPsz&gt;&lt;CtryName&gt;AU&lt;/CtryName&gt;&lt;RgnCod&gt;NSW&lt;/RgnCod&gt;&lt;PhnNum&gt;&lt;/PhnNum&gt;&lt;FaxNum&gt;&lt;/FaxNum&gt;&lt;EmailAdr&gt;&lt;/EmailAdr&gt;&lt;LocaleId&gt;EN&lt;/LocaleId&gt;&lt;VATregNo&gt;&lt;/VATregNo&gt;&lt;CourierNo&gt;&lt;/CourierNo&gt;&lt;/ADDRESS_SEG&gt;&lt;ADDRESS_SEG&gt;&lt;AdrTyp&gt;OSP&lt;/AdrTyp&gt;&lt;HostAdrId&gt;AU04&lt;/HostAdrId&gt;&lt;ILNNr&gt;&lt;/ILNNr&gt;&lt;AdrNam1&gt;Ship.Point CB Linfox Sydney&lt;/AdrNam1&gt;&lt;AdrNam2&gt;&lt;/AdrNam2&gt;&lt;AdrNam3&gt;&lt;/AdrNam3&gt;&lt;AdrNam4&gt;&lt;/AdrNam4&gt;&lt;AdrLn1&gt;&lt;/AdrLn1&gt;&lt;AdrLn2&gt;&lt;/AdrLn2&gt;&lt;AdrLn3&gt;&lt;/AdrLn3&gt;&lt;AdrCty&gt;&lt;/AdrCty&gt;&lt;AdrDist&gt;&lt;/AdrDist&gt;&lt;AdrPsz&gt;&lt;/AdrPsz&gt;&lt;CtryName&gt;AU&lt;/CtryName&gt;&lt;RgnCod&gt;&lt;/RgnCod&gt;&lt;PhnNum&gt;&lt;/PhnNum&gt;&lt;FaxNum&gt;&lt;/FaxNum&gt;&lt;EmailAdr&gt;&lt;/EmailAdr&gt;&lt;LocaleId&gt;EN&lt;/LocaleId&gt;&lt;VATregNo&gt;&lt;/VATregNo&gt;&lt;CourierNo&gt;&lt;/CourierNo&gt;&lt;/ADDRESS_SEG&gt;&lt;ADDRESS_SEG&gt;&lt;AdrTyp&gt;OSF&lt;/AdrTyp&gt;&lt;HostAdrId&gt;SAU7&lt;/HostAdrId&gt;&lt;ILNNr&gt;&lt;/ILNNr&gt;&lt;AdrNam1&gt;Aust KLEE Sales Office - Consumer Beauty&lt;/AdrNam1&gt;&lt;AdrNam2&gt;&lt;/AdrNam2&gt;&lt;AdrNam3&gt;&lt;/AdrNam3&gt;&lt;AdrNam4&gt;&lt;/AdrNam4&gt;&lt;AdrLn1&gt;Level 31, 1 Market St&lt;/AdrLn1&gt;&lt;AdrLn2&gt;&lt;/AdrLn2&gt;&lt;AdrLn3&gt;&lt;/AdrLn3&gt;&lt;AdrCty&gt;Sydney&lt;/AdrCty&gt;&lt;AdrDist&gt;&lt;/AdrDist&gt;&lt;AdrPsz&gt;2000&lt;/AdrPsz&gt;&lt;CtryName&gt;AU&lt;/CtryName&gt;&lt;RgnCod&gt;NSW&lt;/RgnCod&gt;&lt;PhnNum&gt;02 9267 5500&lt;/PhnNum&gt;&lt;FaxNum&gt;02 9267 5452&lt;/FaxNum&gt;&lt;EmailAdr&gt;&lt;/EmailAdr&gt;&lt;LocaleId&gt;EN&lt;/LocaleId&gt;&lt;VATregNo&gt;&lt;/VATregNo&gt;&lt;CourierNo&gt;&lt;/CourierNo&gt;&lt;/ADDRESS_SEG&gt;&lt;ADDRESS_SEG&gt;&lt;AdrTyp&gt;RG&lt;/AdrTyp&gt;&lt;HostAdrId&gt;0010514819&lt;/HostAdrId&gt;&lt;ILNNr&gt;&lt;/ILNNr&gt;&lt;AdrNam1&gt;Bourke Pharmacy&lt;/AdrNam1&gt;&lt;AdrNam2&gt;&lt;/AdrNam2&gt;&lt;AdrNam3&gt;DUB&lt;/AdrNam3&gt;&lt;AdrNam4&gt;&lt;/AdrNam4&gt;&lt;AdrLn1&gt;34 Oxley Street&lt;/AdrLn1&gt;&lt;AdrLn2&gt;&lt;/AdrLn2&gt;&lt;AdrLn3&gt;&lt;/AdrLn3&gt;&lt;AdrCty&gt;Bourke&lt;/AdrCty&gt;&lt;AdrDist&gt;&lt;/AdrDist&gt;&lt;AdrPsz&gt;2840&lt;/AdrPsz&gt;&lt;CtryName&gt;AU&lt;/CtryName&gt;&lt;RgnCod&gt;NSW&lt;/RgnCod&gt;&lt;PhnNum&gt;02 6872 2004&lt;/PhnNum&gt;&lt;FaxNum&gt;&lt;/FaxNum&gt;&lt;EmailAdr&gt;pharmacybourke@gmail.com&lt;/EmailAdr&gt;&lt;LocaleId&gt;EN&lt;/LocaleId&gt;&lt;VATregNo&gt;21 606 953 137&lt;/VATregNo&gt;&lt;CourierNo&gt;&lt;/CourierNo&gt;&lt;/ADDRESS_SEG&gt;&lt;ADDRESS_SEG&gt;&lt;AdrTyp&gt;RE&lt;/AdrTyp&gt;&lt;HostAdrId&gt;0010514819&lt;/HostAdrId&gt;&lt;ILNNr&gt;&lt;/ILNNr&gt;&lt;AdrNam1&gt;Bourke Pharmacy&lt;/AdrNam1&gt;&lt;AdrNam2&gt;&lt;/AdrNam2&gt;&lt;AdrNam3&gt;DUB&lt;/AdrNam3&gt;&lt;AdrNam4&gt;&lt;/AdrNam4&gt;&lt;AdrLn1&gt;34 Oxley Street&lt;/AdrLn1&gt;&lt;AdrLn2&gt;&lt;/AdrLn2&gt;&lt;AdrLn3&gt;&lt;/AdrLn3&gt;&lt;AdrCty&gt;Bourke&lt;/AdrCty&gt;&lt;AdrDist&gt;&lt;/AdrDist&gt;&lt;AdrPsz&gt;2840&lt;/AdrPsz&gt;&lt;CtryName&gt;AU&lt;/CtryName&gt;&lt;RgnCod&gt;NSW&lt;/RgnCod&gt;&lt;PhnNum&gt;02 6872 2004&lt;/PhnNum&gt;&lt;FaxNum&gt;&lt;/FaxNum&gt;&lt;EmailAdr&gt;pharmacybourke@gmail.com&lt;/EmailAdr&gt;&lt;LocaleId&gt;EN&lt;/LocaleId&gt;&lt;VATregNo&gt;21 606 953 137&lt;/VATregNo&gt;&lt;CourierNo&gt;&lt;/CourierNo&gt;&lt;/ADDRESS_SEG&gt;&lt;ADDRESS_SEG&gt;&lt;AdrTyp&gt;Z2&lt;/AdrTyp&gt;&lt;HostAdrId&gt;0010514819&lt;/HostAdrId&gt;&lt;ILNNr&gt;&lt;/ILNNr&gt;&lt;AdrNam1&gt;Bourke Pharmacy&lt;/AdrNam1&gt;&lt;AdrNam2&gt;&lt;/AdrNam2&gt;&lt;AdrNam3&gt;DUB&lt;/AdrNam3&gt;&lt;AdrNam4&gt;&lt;/AdrNam4&gt;&lt;AdrLn1&gt;34 Oxley Street&lt;/AdrLn1&gt;&lt;AdrLn2&gt;&lt;/AdrLn2&gt;&lt;AdrLn3&gt;&lt;/AdrLn3&gt;&lt;AdrCty&gt;Bourke&lt;/AdrCty&gt;&lt;AdrDist&gt;&lt;/AdrDist&gt;&lt;AdrPsz&gt;2840&lt;/AdrPsz&gt;&lt;CtryName&gt;AU&lt;/CtryName&gt;&lt;RgnCod&gt;NSW&lt;/RgnCod&gt;&lt;PhnNum&gt;02 6872 2004&lt;/PhnNum&gt;&lt;FaxNum&gt;&lt;/FaxNum&gt;&lt;EmailAdr&gt;pharmacybourke@gmail.com&lt;/EmailAdr&gt;&lt;LocaleId&gt;EN&lt;/LocaleId&gt;&lt;VATregNo&gt;21 606 953 137&lt;/VATregNo&gt;&lt;CourierNo&gt;&lt;/CourierNo&gt;&lt;/ADDRESS_SEG&gt;&lt;ADDRESS_SEG&gt;&lt;AdrTyp&gt;Z3&lt;/AdrTyp&gt;&lt;HostAdrId&gt;0000804833&lt;/HostAdrId&gt;&lt;ILNNr&gt;&lt;/ILNNr&gt;&lt;AdrNam1&gt;Acct Mngr Phmcy/Perfumery NSW 1&lt;/AdrNam1&gt;&lt;AdrNam2&gt;Area 201&lt;/AdrNam2&gt;&lt;AdrNam3&gt;&lt;/AdrNam3&gt;&lt;AdrNam4&gt;&lt;/AdrNam4&gt;&lt;AdrLn1&gt;Storage King&lt;/AdrLn1&gt;&lt;AdrLn2&gt;&lt;/AdrLn2&gt;&lt;AdrLn3&gt;&lt;/AdrLn3&gt;&lt;AdrCty&gt;CAMPERDOWN&lt;/AdrCty&gt;&lt;AdrDist&gt;&lt;/AdrDist&gt;&lt;AdrPsz&gt;&lt;/AdrPsz&gt;&lt;CtryName&gt;AU&lt;/CtryName&gt;&lt;RgnCod&gt;&lt;/RgnCod&gt;&lt;PhnNum&gt;&lt;/PhnNum&gt;&lt;FaxNum&gt;&lt;/FaxNum&gt;&lt;EmailAdr&gt;&lt;/EmailAdr&gt;&lt;LocaleId&gt;EN&lt;/LocaleId&gt;&lt;VATregNo&gt;&lt;/VATregNo&gt;&lt;CourierNo&gt;&lt;/CourierNo&gt;&lt;/ADDRESS_SEG&gt;&lt;ADDRESS_SEG&gt;&lt;AdrTyp&gt;1E&lt;/AdrTyp&gt;&lt;HostAdrId&gt;0000930873&lt;/HostAdrId&gt;&lt;ILNNr&gt;&lt;/ILNNr&gt;&lt;AdrNam1&gt;TOTAL CUSTOMER L1&lt;/AdrNam1&gt;&lt;AdrNam2&gt;&lt;/AdrNam2&gt;&lt;AdrNam3&gt;&lt;/AdrNam3&gt;&lt;AdrNam4&gt;&lt;/AdrNam4&gt;&lt;AdrLn1&gt;&lt;/AdrLn1&gt;&lt;AdrLn2&gt;&lt;/AdrLn2&gt;&lt;AdrLn3&gt;&lt;/AdrLn3&gt;&lt;AdrCty&gt;&lt;/AdrCty&gt;&lt;AdrDist&gt;&lt;/AdrDist&gt;&lt;AdrPsz&gt;&lt;/AdrPsz&gt;&lt;CtryName&gt;AU&lt;/CtryName&gt;&lt;RgnCod&gt;&lt;/RgnCod&gt;&lt;PhnNum&gt;&lt;/PhnNum&gt;&lt;FaxNum&gt;&lt;/FaxNum&gt;&lt;EmailAdr&gt;&lt;/EmailAdr&gt;&lt;LocaleId&gt;EN&lt;/LocaleId&gt;&lt;VATregNo&gt;&lt;/VATregNo&gt;&lt;CourierNo&gt;&lt;/CourierNo&gt;&lt;/ADDRESS_SEG&gt;&lt;ADDRESS_SEG&gt;&lt;AdrTyp&gt;1D&lt;/AdrTyp&gt;&lt;HostAdrId&gt;0000930896&lt;/HostAdrId&gt;&lt;ILNNr&gt;&lt;/ILNNr&gt;&lt;AdrNam1&gt;GENERAL PHARMACY L2&lt;/AdrNam1&gt;&lt;AdrNam2&gt;&lt;/AdrNam2&gt;&lt;AdrNam3&gt;&lt;/AdrNam3&gt;&lt;AdrNam4&gt;&lt;/AdrNam4&gt;&lt;AdrLn1&gt;&lt;/AdrLn1&gt;&lt;AdrLn2&gt;&lt;/AdrLn2&gt;&lt;AdrLn3&gt;&lt;/AdrLn3&gt;&lt;AdrCty&gt;&lt;/AdrCty&gt;&lt;AdrDist&gt;&lt;/AdrDist&gt;&lt;AdrPsz&gt;&lt;/AdrPsz&gt;&lt;CtryName&gt;AU&lt;/CtryName&gt;&lt;RgnCod&gt;&lt;/RgnCod&gt;&lt;PhnNum&gt;&lt;/PhnNum&gt;&lt;FaxNum&gt;&lt;/FaxNum&gt;&lt;EmailAdr&gt;&lt;/EmailAdr&gt;&lt;LocaleId&gt;EN&lt;/LocaleId&gt;&lt;VATregNo&gt;&lt;/VATregNo&gt;&lt;CourierNo&gt;&lt;/CourierNo&gt;&lt;/ADDRESS_SEG&gt;&lt;ADDRESS_SEG&gt;&lt;AdrTyp&gt;1C&lt;/AdrTyp&gt;&lt;HostAdrId&gt;0000930928&lt;/HostAdrId&gt;&lt;ILNNr&gt;&lt;/ILNNr&gt;&lt;AdrNam1&gt;INDEPENDENT PHARMACY L3&lt;/AdrNam1&gt;&lt;AdrNam2&gt;&lt;/AdrNam2&gt;&lt;AdrNam3&gt;&lt;/AdrNam3&gt;&lt;AdrNam4&gt;&lt;/AdrNam4&gt;&lt;AdrLn1&gt;&lt;/AdrLn1&gt;&lt;AdrLn2&gt;&lt;/AdrLn2&gt;&lt;AdrLn3&gt;&lt;/AdrLn3&gt;&lt;AdrCty&gt;&lt;/AdrCty&gt;&lt;AdrDist&gt;&lt;/AdrDist&gt;&lt;AdrPsz&gt;&lt;/AdrPsz&gt;&lt;CtryName&gt;AU&lt;/CtryName&gt;&lt;RgnCod&gt;&lt;/RgnCod&gt;&lt;PhnNum&gt;&lt;/PhnNum&gt;&lt;FaxNum&gt;&lt;/FaxNum&gt;&lt;EmailAdr&gt;&lt;/EmailAdr&gt;&lt;LocaleId&gt;EN&lt;/LocaleId&gt;&lt;VATregNo&gt;&lt;/VATregNo&gt;&lt;CourierNo&gt;&lt;/CourierNo&gt;&lt;/ADDRESS_SEG&gt;&lt;ADDRESS_SEG&gt;&lt;AdrTyp&gt;1B&lt;/AdrTyp&gt;&lt;HostAdrId&gt;0000931008&lt;/HostAdrId&gt;&lt;ILNNr&gt;&lt;/ILNNr&gt;&lt;AdrNam1&gt;INDEPENDENT PHARMACY L4&lt;/AdrNam1&gt;&lt;AdrNam2&gt;&lt;/AdrNam2&gt;&lt;AdrNam3&gt;&lt;/AdrNam3&gt;&lt;AdrNam4&gt;&lt;/AdrNam4&gt;&lt;AdrLn1&gt;&lt;/AdrLn1&gt;&lt;AdrLn2&gt;&lt;/AdrLn2&gt;&lt;AdrLn3&gt;&lt;/AdrLn3&gt;&lt;AdrCty&gt;&lt;/AdrCty&gt;&lt;AdrDist&gt;&lt;/AdrDist&gt;&lt;AdrPsz&gt;&lt;/AdrPsz&gt;&lt;CtryName&gt;AU&lt;/CtryName&gt;&lt;RgnCod&gt;&lt;/RgnCod&gt;&lt;PhnNum&gt;&lt;/PhnNum&gt;&lt;FaxNum&gt;&lt;/FaxNum&gt;&lt;EmailAdr&gt;&lt;/EmailAdr&gt;&lt;LocaleId&gt;EN&lt;/LocaleId&gt;&lt;VATregNo&gt;&lt;/VATregNo&gt;&lt;CourierNo&gt;&lt;/CourierNo&gt;&lt;/ADDRESS_SEG&gt;&lt;SHIPMENT_SEG&gt;&lt;HostShipId&gt;&lt;/HostShipId&gt;&lt;Division&gt;1207&lt;/Division&gt;&lt;CarCod&gt;&lt;/CarCod&gt;&lt;VendorNumber&gt;&lt;/VendorNumber&gt;&lt;ShipType&gt;&lt;/ShipType&gt;&lt;TranspMode&gt;3&lt;/TranspMode&gt;&lt;Route&gt;AAU3C2&lt;/Route&gt;&lt;Early_ShpDte&gt;2024-08-26T00:00:00Z&lt;/Early_ShpDte&gt;&lt;Late_ShpDte&gt;2024-08-26T00:00:00Z&lt;/Late_ShpDte&gt;&lt;Early_DlvDte&gt;2024-08-28T00:00:00Z&lt;/Early_DlvDte&gt;&lt;Late_DlvDte&gt;2024-08-28T00:00:00Z&lt;/Late_DlvDte&gt;&lt;DlvTimeZone&gt;AUSNSW&lt;/DlvTimeZone&gt;&lt;Planned_GI_Dte&gt;2024-08-26T00:00:00Z&lt;/Planned_GI_Dte&gt;&lt;ReqDlvDte&gt;2024-08-26T00:00:00Z&lt;/ReqDlvDte&gt;&lt;CancelDlvDte&gt;2024-08-26T00:00:00Z&lt;/CancelDlvDte&gt;&lt;FFHostAdrId&gt;0000137916&lt;/FFHostAdrId&gt;&lt;BTHostAdrId&gt;0010514819&lt;/BTHostAdrId&gt;&lt;DELIVERY_SEG&gt;&lt;DlvNum&gt;3038363149&lt;/DlvNum&gt;&lt;OrdTyp&gt;ZEN1&lt;/OrdTyp&gt;&lt;ShipCond&gt;YD&lt;/ShipCond&gt;&lt;EntDte&gt;2024-08-20T00:00:00Z&lt;/EntDte&gt;&lt;STHostAdrId&gt;0010514819&lt;/STHostAdrId&gt;&lt;Company&gt;3000&lt;/Company&gt;&lt;SalesOrg&gt;1207&lt;/SalesOrg&gt;&lt;SFHostAdrId&gt;1207&lt;/SFHostAdrId&gt;&lt;StoreNo&gt;&lt;/StoreNo&gt;&lt;DCNo&gt;&lt;/DCNo&gt;&lt;FrtPmtTyp&gt;P&lt;/FrtPmtTyp&gt;&lt;SupNum&gt;&lt;/SupNum&gt;&lt;InvPmtTrm&gt;30AM&lt;/InvPmtTrm&gt;&lt;InvNumber&gt;&lt;/InvNumber&gt;&lt;ExportFlg&gt;&lt;/ExportFlg&gt;&lt;IncoTerm&gt;CFR&lt;/IncoTerm&gt;&lt;IncoQual&gt;Bourke&lt;/IncoQual&gt;&lt;SalesOrgAdrNam1&gt;Coty Australia Legacy Pty Ltd&lt;/SalesOrgAdrNam1&gt;&lt;SalesOrgAdrNam2&gt;&lt;/SalesOrgAdrNam2&gt;&lt;SalesOrgAdrLn1&gt;LEVEL 31/1 MARKET STREET&lt;/SalesOrgAdrLn1&gt;&lt;SalesOrgAdrLn2&gt;&lt;/SalesOrgAdrLn2&gt;&lt;SalesOrgAdrLn3&gt;&lt;/SalesOrgAdrLn3&gt;&lt;SalesOrgAdrCty&gt;SYDNEY&lt;/SalesOrgAdrCty&gt;&lt;SalesOrgAdrPsz&gt;2000&lt;/SalesOrgAdrPsz&gt;&lt;SalesOrgCtryName&gt;AU&lt;/SalesOrgCtryName&gt;&lt;SalesOrgRgnCod&gt;NSW&lt;/SalesOrgRgnCod&gt;&lt;SalesOrgPhnNum&gt;&lt;/SalesOrgPhnNum&gt;&lt;SalesOrgFaxNum&gt;&lt;/SalesOrgFaxNum&gt;&lt;SalesOrgEmailAdr&gt;australia_166_cp@cotyinc.com&lt;/SalesOrgEmailAdr&gt;&lt;SalesOrgLocaleId&gt;EN&lt;/SalesOrgLocaleId&gt;&lt;SalesOrgTaxRegNo&gt;&lt;/SalesOrgTaxRegNo&gt;&lt;SalesOrgBank&gt;&lt;/SalesOrgBank&gt;&lt;SalesOrgBankAccnt&gt;&lt;/SalesOrgBankAccnt&gt;&lt;SalesOrdMerged&gt;5&lt;/SalesOrdMerged&gt;&lt;NumberOfDelvryLines&gt;5&lt;/NumberOfDelvryLines&gt;&lt;ReturnOrderReason&gt;&lt;/ReturnOrderReason&gt;&lt;CustHierL1&gt;0000930873&lt;/CustHierL1&gt;&lt;CustHierL2&gt;0000930896&lt;/CustHierL2&gt;&lt;CustHierL3&gt;0000930928&lt;/CustHierL3&gt;&lt;CustHierL4&gt;0000931008&lt;/CustHierL4&gt;&lt;CustHierL5&gt;0010514819&lt;/CustHierL5&gt;&lt;CustHierL1Name1&gt;TOTAL CUSTOMER L1&lt;/CustHierL1Name1&gt;&lt;CustHierL2Name1&gt;GENERAL PHARMACY L2&lt;/CustHierL2Name1&gt;&lt;CustHierL3Name1&gt;INDEPENDENT PHARMACY L3&lt;/CustHierL3Name1&gt;&lt;CustHierL4Name1&gt;INDEPENDENT PHARMACY L4&lt;/CustHierL4Name1&gt;&lt;CustHierL5Name1&gt;Bourke Pharmacy&lt;/CustHierL5Name1&gt;&lt;Priority&gt;01&lt;/Priority&gt;&lt;DELIVERY_LINE_SEG&gt;&lt;DlvLin&gt;000001&lt;/DlvLin&gt;&lt;MaterialNumber&gt;99350160411&lt;/MaterialNumber&gt;&lt;ItemCategory&gt;ZTAN&lt;/ItemCategory&gt;&lt;ItemDescription&gt;DVB INST EDP 75ml 23 IV&lt;/ItemDescription&gt;&lt;StorageLocation&gt;1000&lt;/StorageLocation&gt;&lt;Division&gt;C0&lt;/Division&gt;&lt;ParentLine&gt;&lt;/ParentLine&gt;&lt;CustParPoNum&gt;&lt;/CustParPoNum&gt;&lt;CpoNum&gt;19169&lt;/CpoNum&gt;&lt;CpoTyp&gt;9999&lt;/CpoTyp&gt;&lt;CpoLine&gt;&lt;/CpoLine&gt;&lt;SODte&gt;2024-08-20T00:00:00Z&lt;/SODte&gt;&lt;LotNum&gt;&lt;/LotNum&gt;&lt;DlvLinQty&gt;6.000&lt;/DlvLinQty&gt;&lt;DlvLinUoM&gt;PCE&lt;/DlvLinUoM&gt;&lt;DlvLinQtyBuOM&gt;6.000&lt;/DlvLinQtyBuOM&gt;&lt;DlvLinUoMBuOM&gt;PCE&lt;/DlvLinUoMBuOM&gt;&lt;CstPrt&gt;&lt;/CstPrt&gt;&lt;CstRtlPrc&gt;55.99&lt;/CstRtlPrc&gt;&lt;NetUnitPrice&gt;13.00&lt;/NetUnitPrice&gt;&lt;PricePerUnit&gt;1&lt;/PricePerUnit&gt;&lt;Currency&gt;AUD&lt;/Currency&gt;&lt;SalesOrd&gt;0212133843&lt;/SalesOrd&gt;&lt;SalesOrdItem&gt;000010&lt;/SalesOrdItem&gt;&lt;SalesOrdType&gt;ZPE1&lt;/SalesOrdType&gt;&lt;SalesOrdDate&gt;2024-08-20T00:00:00Z&lt;/SalesOrdDate&gt;&lt;PaymentMethod&gt;30AM&lt;/PaymentMethod&gt;&lt;EAN&gt;3616304892783&lt;/EAN&gt;&lt;OriginalQuantity&gt;6.000&lt;/OriginalQuantity&gt;&lt;VATrate&gt;10&lt;/VATrate&gt;&lt;VATRateString&gt;10%&lt;/VATRateString&gt;&lt;MaterialSalesText&gt;DVB INST EDP 75ml 23&lt;/MaterialSalesText&gt;&lt;BackOrderInd&gt;&lt;/BackOrderInd&gt;&lt;CrossDockInd&gt;&lt;/CrossDockInd&gt;&lt;StoreName1&gt;&lt;/StoreName1&gt;&lt;StoreName2&gt;&lt;/StoreName2&gt;&lt;StoreName3&gt;&lt;/StoreName3&gt;&lt;StoreStreet&gt;&lt;/StoreStreet&gt;&lt;StoreStreet2&gt;&lt;/StoreStreet2&gt;&lt;StorePostalCode&gt;&lt;/StorePostalCode&gt;&lt;StoreCity&gt;&lt;/StoreCity&gt;&lt;StoreCountry&gt;&lt;/StoreCountry&gt;&lt;DELIVERY_LINE_NOTE_HDR_SEG&gt;&lt;NotTyp&gt;Z077&lt;/NotTyp&gt;&lt;DELIVERY_LINE_NOTE_LIN_SEG&gt;&lt;NotTxt&gt;EAN =&lt;/NotTxt&gt;&lt;/DELIVERY_LINE_NOTE_LIN_SEG&gt;&lt;/DELIVERY_LINE_NOTE_HDR_SEG&gt;&lt;/DELIVERY_LINE_SEG&gt;&lt;DELIVERY_LINE_SEG&gt;&lt;DlvLin&gt;000002&lt;/DlvLin&gt;&lt;MaterialNumber&gt;99350160413&lt;/MaterialNumber&gt;&lt;ItemCategory&gt;ZTAN&lt;/ItemCategory&gt;&lt;ItemDescription&gt;DVB BOLD INS EDP 75ml 23 IV&lt;/ItemDescription&gt;&lt;StorageLocation&gt;1000&lt;/StorageLocation&gt;&lt;Division&gt;C0&lt;/Division&gt;&lt;ParentLine&gt;&lt;/ParentLine&gt;&lt;CustParPoNum&gt;&lt;/CustParPoNum&gt;&lt;CpoNum&gt;19169&lt;/CpoNum&gt;&lt;CpoTyp&gt;9999&lt;/CpoTyp&gt;&lt;CpoLine&gt;&lt;/CpoLine&gt;&lt;SODte&gt;2024-08-20T00:00:00Z&lt;/SODte&gt;&lt;LotNum&gt;&lt;/LotNum&gt;&lt;DlvLinQty&gt;6.000&lt;/DlvLinQty&gt;&lt;DlvLinUoM&gt;PCE&lt;/DlvLinUoM&gt;&lt;DlvLinQtyBuOM&gt;6.000&lt;/DlvLinQtyBuOM&gt;&lt;DlvLinUoMBuOM&gt;PCE&lt;/DlvLinUoMBuOM&gt;&lt;CstPrt&gt;&lt;/CstPrt&gt;&lt;CstRtlPrc&gt;55.99&lt;/CstRtlPrc&gt;&lt;NetUnitPrice&gt;13.00&lt;/NetUnitPrice&gt;&lt;PricePerUnit&gt;1&lt;/PricePerUnit&gt;&lt;Currency&gt;AUD&lt;/Currency&gt;&lt;SalesOrd&gt;0212133843&lt;/SalesOrd&gt;&lt;SalesOrdItem&gt;000020&lt;/SalesOrdItem&gt;&lt;SalesOrdType&gt;ZPE1&lt;/SalesOrdType&gt;&lt;SalesOrdDate&gt;2024-08-20T00:00:00Z&lt;/SalesOrdDate&gt;&lt;PaymentMethod&gt;30AM&lt;/PaymentMethod&gt;&lt;EAN&gt;3616304892806&lt;/EAN&gt;&lt;OriginalQuantity&gt;6.000&lt;/OriginalQuantity&gt;&lt;VATrate&gt;10&lt;/VATrate&gt;&lt;VATRateString&gt;10%&lt;/VATRateString&gt;&lt;MaterialSalesText&gt;DVB BOLD INS EDP 75ml 23&lt;/MaterialSalesText&gt;&lt;BackOrderInd&gt;&lt;/BackOrderInd&gt;&lt;CrossDockInd&gt;&lt;/CrossDockInd&gt;&lt;StoreName1&gt;&lt;/StoreName1&gt;&lt;StoreName2&gt;&lt;/StoreName2&gt;&lt;StoreName3&gt;&lt;/StoreName3&gt;&lt;StoreStreet&gt;&lt;/StoreStreet&gt;&lt;StoreStreet2&gt;&lt;/StoreStreet2&gt;&lt;StorePostalCode&gt;&lt;/StorePostalCode&gt;&lt;StoreCity&gt;&lt;/StoreCity&gt;&lt;StoreCountry&gt;&lt;/StoreCountry&gt;&lt;DELIVERY_LINE_NOTE_HDR_SEG&gt;&lt;NotTyp&gt;Z077&lt;/NotTyp&gt;&lt;DELIVERY_LINE_NOTE_LIN_SEG&gt;&lt;NotTxt&gt;EAN =&lt;/NotTxt&gt;&lt;/DELIVERY_LINE_NOTE_LIN_SEG&gt;&lt;/DELIVERY_LINE_NOTE_HDR_SEG&gt;&lt;/DELIVERY_LINE_SEG&gt;&lt;DELIVERY_LINE_SEG&gt;&lt;DlvLin&gt;000003&lt;/DlvLin&gt;&lt;MaterialNumber&gt;99350183128&lt;/MaterialNumber&gt;&lt;ItemCategory&gt;ZTAN&lt;/ItemCategory&gt;&lt;ItemDescription&gt;DB TRUE INST EDP 75ML 23IV&lt;/ItemDescription&gt;&lt;StorageLocation&gt;1000&lt;/StorageLocation&gt;&lt;Division&gt;C0&lt;/Division&gt;&lt;ParentLine&gt;&lt;/ParentLine&gt;&lt;CustParPoNum&gt;&lt;/CustParPoNum&gt;&lt;CpoNum&gt;19169&lt;/CpoNum&gt;&lt;CpoTyp&gt;9999&lt;/CpoTyp&gt;&lt;CpoLine&gt;&lt;/CpoLine&gt;&lt;SODte&gt;2024-08-20T00:00:00Z&lt;/SODte&gt;&lt;LotNum&gt;&lt;/LotNum&gt;&lt;DlvLinQty&gt;6.000&lt;/DlvLinQty&gt;&lt;DlvLinUoM&gt;PCE&lt;/DlvLinUoM&gt;&lt;DlvLinQtyBuOM&gt;6.000&lt;/DlvLinQtyBuOM&gt;&lt;DlvLinUoMBuOM&gt;PCE&lt;/DlvLinUoMBuOM&gt;&lt;CstPrt&gt;&lt;/CstPrt&gt;&lt;CstRtlPrc&gt;55.99&lt;/CstRtlPrc&gt;&lt;NetUnitPrice&gt;19.49&lt;/NetUnitPrice&gt;&lt;PricePerUnit&gt;1&lt;/PricePerUnit&gt;&lt;Currency&gt;AUD&lt;/Currency&gt;&lt;SalesOrd&gt;0212133843&lt;/SalesOrd&gt;&lt;SalesOrdItem&gt;000030&lt;/SalesOrdItem&gt;&lt;SalesOrdType&gt;ZPE1&lt;/SalesOrdType&gt;&lt;SalesOrdDate&gt;2024-08-20T00:00:00Z&lt;/SalesOrdDate&gt;&lt;PaymentMethod&gt;30AM&lt;/PaymentMethod&gt;&lt;EAN&gt;3616304895685&lt;/EAN&gt;&lt;OriginalQuantity&gt;6.000&lt;/OriginalQuantity&gt;&lt;VATrate&gt;10&lt;/VATrate&gt;&lt;VATRateString&gt;10%&lt;/VATRateString&gt;&lt;MaterialSalesText&gt;&lt;/MaterialSalesText&gt;&lt;BackOrderInd&gt;&lt;/BackOrderInd&gt;&lt;CrossDockInd&gt;&lt;/CrossDockInd&gt;&lt;StoreName1&gt;&lt;/StoreName1&gt;&lt;StoreName2&gt;&lt;/StoreName2&gt;&lt;StoreName3&gt;&lt;/StoreName3&gt;&lt;StoreStreet&gt;&lt;/StoreStreet&gt;&lt;StoreStreet2&gt;&lt;/StoreStreet2&gt;&lt;StorePostalCode&gt;&lt;/StorePostalCode&gt;&lt;StoreCity&gt;&lt;/StoreCity&gt;&lt;StoreCountry&gt;&lt;/StoreCountry&gt;&lt;DELIVERY_LINE_NOTE_HDR_SEG&gt;&lt;NotTyp&gt;Z077&lt;/NotTyp&gt;&lt;DELIVERY_LINE_NOTE_LIN_SEG&gt;&lt;NotTxt&gt;EAN =&lt;/NotTxt&gt;&lt;/DELIVERY_LINE_NOTE_LIN_SEG&gt;&lt;/DELIVERY_LINE_NOTE_HDR_SEG&gt;&lt;/DELIVERY_LINE_SEG&gt;&lt;DELIVERY_LINE_SEG&gt;&lt;DlvLin&gt;000004&lt;/DlvLin&gt;&lt;MaterialNumber&gt;99350183728&lt;/MaterialNumber&gt;&lt;ItemCategory&gt;ZCMM&lt;/ItemCategory&gt;&lt;ItemDescription&gt;DB TRUE INST TST EDP 75ml IV&lt;/ItemDescription&gt;&lt;StorageLocation&gt;1000&lt;/StorageLocation&gt;&lt;Division&gt;C0&lt;/Division&gt;&lt;ParentLine&gt;&lt;/ParentLine&gt;&lt;CustParPoNum&gt;&lt;/CustParPoNum&gt;&lt;CpoNum&gt;19169&lt;/CpoNum&gt;&lt;CpoTyp&gt;9999&lt;/CpoTyp&gt;&lt;CpoLine&gt;&lt;/CpoLine&gt;&lt;SODte&gt;2024-08-20T00:00:00Z&lt;/SODte&gt;&lt;LotNum&gt;&lt;/LotNum&gt;&lt;DlvLinQty&gt;1.000&lt;/DlvLinQty&gt;&lt;DlvLinUoM&gt;PCE&lt;/DlvLinUoM&gt;&lt;DlvLinQtyBuOM&gt;1.000&lt;/DlvLinQtyBuOM&gt;&lt;DlvLinUoMBuOM&gt;PCE&lt;/DlvLinUoMBuOM&gt;&lt;CstPrt&gt;&lt;/CstPrt&gt;&lt;CstRtlPrc&gt;0.00&lt;/CstRtlPrc&gt;&lt;NetUnitPrice&gt;0.00&lt;/NetUnitPrice&gt;&lt;PricePerUnit&gt;1&lt;/PricePerUnit&gt;&lt;Currency&gt;AUD&lt;/Currency&gt;&lt;SalesOrd&gt;0212133843&lt;/SalesOrd&gt;&lt;SalesOrdItem&gt;000040&lt;/SalesOrdItem&gt;&lt;SalesOrdType&gt;ZPE1&lt;/SalesOrdType&gt;&lt;SalesOrdDate&gt;2024-08-20T00:00:00Z&lt;/SalesOrdDate&gt;&lt;PaymentMethod&gt;30AM&lt;/PaymentMethod&gt;&lt;EAN&gt;3616304693984&lt;/EAN&gt;&lt;OriginalQuantity&gt;1.000&lt;/OriginalQuantity&gt;&lt;VATrate&gt;10&lt;/VATrate&gt;&lt;VATRateString&gt;10%&lt;/VATRateString&gt;&lt;MaterialSalesText&gt;DB TRUE INST TST EDP 75ml IV&lt;/MaterialSalesText&gt;&lt;BackOrderInd&gt;&lt;/BackOrderInd&gt;&lt;CrossDockInd&gt;&lt;/CrossDockInd&gt;&lt;StoreName1&gt;&lt;/StoreName1&gt;&lt;StoreName2&gt;&lt;/StoreName2&gt;&lt;StoreName3&gt;&lt;/StoreName3&gt;&lt;StoreStreet&gt;&lt;/StoreStreet&gt;&lt;StoreStreet2&gt;&lt;/StoreStreet2&gt;&lt;StorePostalCode&gt;&lt;/StorePostalCode&gt;&lt;StoreCity&gt;&lt;/StoreCity&gt;&lt;StoreCountry&gt;&lt;/StoreCountry&gt;&lt;DELIVERY_LINE_NOTE_HDR_SEG&gt;&lt;NotTyp&gt;Z077&lt;/NotTyp&gt;&lt;DELIVERY_LINE_NOTE_LIN_SEG&gt;&lt;NotTxt&gt;EAN =&lt;/NotTxt&gt;&lt;/DELIVERY_LINE_NOTE_LIN_SEG&gt;&lt;/DELIVERY_LINE_NOTE_HDR_SEG&gt;&lt;/DELIVERY_LINE_SEG&gt;&lt;DELIVERY_LINE_SEG&gt;&lt;DlvLin&gt;000005&lt;/DlvLin&gt;&lt;MaterialNumber&gt;99350160417&lt;/MaterialNumber&gt;&lt;ItemCategory&gt;ZCMM&lt;/ItemCategory&gt;&lt;ItemDescription&gt;DVB BOLD INS TST EDP 75ml 23 IV&lt;/ItemDescription&gt;&lt;StorageLocation&gt;1000&lt;/StorageLocation&gt;&lt;Division&gt;C0&lt;/Division&gt;&lt;ParentLine&gt;&lt;/ParentLine&gt;&lt;CustParPoNum&gt;&lt;/CustParPoNum&gt;&lt;CpoNum&gt;19169&lt;/CpoNum&gt;&lt;CpoTyp&gt;9999&lt;/CpoTyp&gt;&lt;CpoLine&gt;&lt;/CpoLine&gt;&lt;SODte&gt;2024-08-20T00:00:00Z&lt;/SODte&gt;&lt;LotNum&gt;&lt;/LotNum&gt;&lt;DlvLinQty&gt;1.000&lt;/DlvLinQty&gt;&lt;DlvLinUoM&gt;PCE&lt;/DlvLinUoM&gt;&lt;DlvLinQtyBuOM&gt;1.000&lt;/DlvLinQtyBuOM&gt;&lt;DlvLinUoMBuOM&gt;PCE&lt;/DlvLinUoMBuOM&gt;&lt;CstPrt&gt;&lt;/CstPrt&gt;&lt;CstRtlPrc&gt;0.00&lt;/CstRtlPrc&gt;&lt;NetUnitPrice&gt;0.00&lt;/NetUnitPrice&gt;&lt;PricePerUnit&gt;1&lt;/PricePerUnit&gt;&lt;Currency&gt;AUD&lt;/Currency&gt;&lt;SalesOrd&gt;0212133843&lt;/SalesOrd&gt;&lt;SalesOrdItem&gt;000060&lt;/SalesOrdItem&gt;&lt;SalesOrdType&gt;ZPE1&lt;/SalesOrdType&gt;&lt;SalesOrdDate&gt;2024-08-20T00:00:00Z&lt;/SalesOrdDate&gt;&lt;PaymentMethod&gt;30AM&lt;/PaymentMethod&gt;&lt;EAN&gt;3616304892837&lt;/EAN&gt;&lt;OriginalQuantity&gt;1.000&lt;/OriginalQuantity&gt;&lt;VATrate&gt;10&lt;/VATrate&gt;&lt;VATRateString&gt;10%&lt;/VATRateString&gt;&lt;MaterialSalesText&gt;&lt;/MaterialSalesText&gt;&lt;BackOrderInd&gt;&lt;/BackOrderInd&gt;&lt;CrossDockInd&gt;&lt;/CrossDockInd&gt;&lt;StoreName1&gt;&lt;/StoreName1&gt;&lt;StoreName2&gt;&lt;/StoreName2&gt;&lt;StoreName3&gt;&lt;/StoreName3&gt;&lt;StoreStreet&gt;&lt;/StoreStreet&gt;&lt;StoreStreet2&gt;&lt;/StoreStreet2&gt;&lt;StorePostalCode&gt;&lt;/StorePostalCode&gt;&lt;StoreCity&gt;&lt;/StoreCity&gt;&lt;StoreCountry&gt;&lt;/StoreCountry&gt;&lt;DELIVERY_LINE_NOTE_HDR_SEG&gt;&lt;NotTyp&gt;Z077&lt;/NotTyp&gt;&lt;DELIVERY_LINE_NOTE_LIN_SEG&gt;&lt;NotTxt&gt;EAN =&lt;/NotTxt&gt;&lt;/DELIVERY_LINE_NOTE_LIN_SEG&gt;&lt;/DELIVERY_LINE_NOTE_HDR_SEG&gt;&lt;/DELIVERY_LINE_SEG&gt;&lt;DELIVERY_NOTE_HDR_SEG&gt;&lt;NotTyp&gt;Z001&lt;/NotTyp&gt;&lt;LanguageId&gt;E&lt;/LanguageId&gt;&lt;LanguageIdIso&gt;EN&lt;/LanguageIdIso&gt;&lt;DELIVERY_NOTE_LIN_SEG&gt;&lt;NotFmt&gt;*&lt;/NotFmt&gt;&lt;NotTxt&gt;DTS&lt;/NotTxt&gt;&lt;/DELIVERY_NOTE_LIN_SEG&gt;&lt;/DELIVERY_NOTE_HDR_SEG&gt;&lt;DELIVERY_NOTE_HDR_SEG&gt;&lt;NotTyp&gt;Z030&lt;/NotTyp&gt;&lt;LanguageId&gt;E&lt;/LanguageId&gt;&lt;LanguageIdIso&gt;EN&lt;/LanguageIdIso&gt;&lt;DELIVERY_NOTE_LIN_SEG&gt;&lt;NotFmt&gt;*&lt;/NotFmt&gt;&lt;NotTxt&gt;DTS&lt;/NotTxt&gt;&lt;/DELIVERY_NOTE_LIN_SEG&gt;&lt;/DELIVERY_NOTE_HDR_SEG&gt;&lt;DELIVERY_VAS_FLAG_SEG&gt;&lt;ConsolVASflag&gt;&lt;/ConsolVASflag&gt;&lt;/DELIVERY_VAS_FLAG_SEG&gt;&lt;/DELIVERY_SEG&gt;&lt;/SHIPMENT_SEG&gt;&lt;/CTRL_SEG&gt;&lt;/SHIPPING_ORDER_DOWNLOAD_IWAY_OUP&gt;</value>
+  <record name="type" javaclass="com.wm.util.Values">
+    <value name="node_type">field</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_name">xmldata</value>
+    <value name="field_type">string</value>
+    <value name="field_dim">0</value>
+    <value name="field_opt">true</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+  </record>
+</Values>
+</DATA>
+</MAPSET>
+</MAP>
+
+<MAP MODE="OUTPUT">
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">xmldata</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">SHIPPING_ORDER_DOWNLOAD_IWAY_OUP</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">wmio.b2b.coty.interfaces.common.doc:SHIPPING_ORDER_DOWNLOAD_IWAY_OUP</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">quantityUOM</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">stockCategory</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">expectedReceipt</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">lfx.commondatamodel.pub.doc.expectedreceipt:ExpectedReceipt</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">node</value>
+        <value name="field_type">object</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_name">xmlStringToXMLNodeOutput</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPDELETE FIELD="/xmldata;1;0">
+</MAPDELETE>
+</MAP>
+</INVOKE>
+
+<INVOKE TIMEOUT="" SERVICE="pub.xml:xmlNodeToDocument" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP MODE="INPUT">
+</MAP>
+
+<MAP MODE="OUTPUT">
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">SHIPPING_ORDER_DOWNLOAD_IWAY_OUP</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">wmio.b2b.coty.interfaces.common.doc:SHIPPING_ORDER_DOWNLOAD_IWAY_OUP</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">quantityUOM</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">stockCategory</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">expectedReceipt</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">lfx.commondatamodel.pub.doc.expectedreceipt:ExpectedReceipt</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">node</value>
+        <value name="field_type">object</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">document</value>
+        <value name="field_type">record</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <array name="rec_fields" type="record" depth="1">
+        </array>
+        <value name="modifiable">true</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_name">xmlNodeToDocumentOutput</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">document</value>
+        <value name="field_type">record</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <array name="rec_fields" type="record" depth="1">
+        </array>
+        <value name="modifiable">true</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/document;2;0" TO="/SHIPPING_ORDER_DOWNLOAD_IWAY_OUP;4;0;wmio.b2b.coty.interfaces.common.doc:SHIPPING_ORDER_DOWNLOAD_IWAY_OUP">
+</MAPCOPY>
+
+<MAPDELETE FIELD="/document;2;0">
+</MAPDELETE>
+
+<MAPDELETE FIELD="/node;3;0">
+</MAPDELETE>
+</MAP>
+</INVOKE>
+
 <LOOP TIMEOUT="" IN-ARRAY="/SHIPPING_ORDER_DOWNLOAD_IWAY_OUP/SHIPPING_ORDER_DOWNLOAD_IWAY_OUP/CTRL_SEG/SHIPMENT_SEG/DELIVERY_SEG">
   <COMMENT></COMMENT>
 
@@ -91,6 +596,45 @@
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
       </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">stockCategory</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">expectedReceipt</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">lfx.commondatamodel.pub.doc.expectedreceipt:ExpectedReceipt</value>
+      </record>
     </array>
     <value name="modifiable">true</value>
   </record>
@@ -158,6 +702,45 @@
         <value name="nillable">true</value>
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">stockCategory</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">expectedReceipt</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">lfx.commondatamodel.pub.doc.expectedreceipt:ExpectedReceipt</value>
       </record>
     </array>
     <value name="modifiable">true</value>
@@ -296,6 +879,45 @@
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
       </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">stockCategory</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">expectedReceipt</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">lfx.commondatamodel.pub.doc.expectedreceipt:ExpectedReceipt</value>
+      </record>
     </array>
     <value name="modifiable">true</value>
   </record>
@@ -374,6 +996,45 @@
         <value name="nillable">true</value>
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">stockCategory</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">expectedReceipt</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">lfx.commondatamodel.pub.doc.expectedreceipt:ExpectedReceipt</value>
       </record>
     </array>
     <value name="modifiable">true</value>
@@ -514,19 +1175,6 @@
         <value name="is_global">false</value>
       </record>
       <record javaclass="com.wm.util.Values">
-        <value name="node_type">record</value>
-        <value name="node_subtype">unknown</value>
-        <value name="is_public">false</value>
-        <value name="field_name">expectedReceipt</value>
-        <value name="field_type">recref</value>
-        <value name="field_dim">0</value>
-        <value name="nillable">true</value>
-        <value name="form_qualified">false</value>
-        <value name="is_global">false</value>
-        <value name="modifiable">true</value>
-        <value name="rec_ref">lfx.commondatamodel.pub.doc.expectedreceipt:ExpectedReceipt</value>
-      </record>
-      <record javaclass="com.wm.util.Values">
         <value name="node_type">unknown</value>
         <value name="node_subtype">unknown</value>
         <value name="node_comment"></value>
@@ -555,6 +1203,45 @@
         <value name="nillable">true</value>
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">stockCategory</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">expectedReceipt</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">lfx.commondatamodel.pub.doc.expectedreceipt:ExpectedReceipt</value>
       </record>
     </array>
     <value name="modifiable">true</value>
@@ -645,6 +1332,45 @@
         <value name="nillable">true</value>
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">stockCategory</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">expectedReceipt</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">lfx.commondatamodel.pub.doc.expectedreceipt:ExpectedReceipt</value>
       </record>
     </array>
     <value name="modifiable">true</value>
@@ -805,19 +1531,6 @@
         <value name="is_global">false</value>
       </record>
       <record javaclass="com.wm.util.Values">
-        <value name="node_type">record</value>
-        <value name="node_subtype">unknown</value>
-        <value name="is_public">false</value>
-        <value name="field_name">expectedReceipt</value>
-        <value name="field_type">recref</value>
-        <value name="field_dim">0</value>
-        <value name="nillable">true</value>
-        <value name="form_qualified">false</value>
-        <value name="is_global">false</value>
-        <value name="modifiable">true</value>
-        <value name="rec_ref">lfx.commondatamodel.pub.doc.expectedreceipt:ExpectedReceipt</value>
-      </record>
-      <record javaclass="com.wm.util.Values">
         <value name="node_type">unknown</value>
         <value name="node_subtype">unknown</value>
         <value name="node_comment"></value>
@@ -846,6 +1559,45 @@
         <value name="nillable">true</value>
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">stockCategory</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">expectedReceipt</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">lfx.commondatamodel.pub.doc.expectedreceipt:ExpectedReceipt</value>
       </record>
     </array>
     <value name="modifiable">true</value>
@@ -908,19 +1660,6 @@
         <value name="is_global">false</value>
       </record>
       <record javaclass="com.wm.util.Values">
-        <value name="node_type">record</value>
-        <value name="node_subtype">unknown</value>
-        <value name="is_public">false</value>
-        <value name="field_name">expectedReceipt</value>
-        <value name="field_type">recref</value>
-        <value name="field_dim">0</value>
-        <value name="nillable">true</value>
-        <value name="form_qualified">false</value>
-        <value name="is_global">false</value>
-        <value name="modifiable">true</value>
-        <value name="rec_ref">lfx.commondatamodel.pub.doc.expectedreceipt:ExpectedReceipt</value>
-      </record>
-      <record javaclass="com.wm.util.Values">
         <value name="node_type">unknown</value>
         <value name="node_subtype">unknown</value>
         <value name="node_comment"></value>
@@ -949,6 +1688,45 @@
         <value name="nillable">true</value>
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">stockCategory</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">expectedReceipt</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">lfx.commondatamodel.pub.doc.expectedreceipt:ExpectedReceipt</value>
       </record>
     </array>
     <value name="modifiable">true</value>
@@ -1022,30 +1800,6 @@
         <value name="is_global">false</value>
       </record>
       <record javaclass="com.wm.util.Values">
-        <value name="node_type">record</value>
-        <value name="node_subtype">unknown</value>
-        <value name="is_public">false</value>
-        <value name="field_name">expectedReceipt</value>
-        <value name="field_type">recref</value>
-        <value name="field_dim">0</value>
-        <value name="nillable">true</value>
-        <value name="form_qualified">false</value>
-        <value name="is_global">false</value>
-        <value name="modifiable">true</value>
-        <value name="rec_ref">lfx.commondatamodel.pub.doc.expectedreceipt:ExpectedReceipt</value>
-      </record>
-      <record javaclass="com.wm.util.Values">
-        <value name="node_type">unknown</value>
-        <value name="node_subtype">unknown</value>
-        <value name="is_public">false</value>
-        <value name="field_name">ns:StockCategory</value>
-        <value name="field_type">string</value>
-        <value name="field_dim">0</value>
-        <value name="nillable">true</value>
-        <value name="form_qualified">false</value>
-        <value name="is_global">false</value>
-      </record>
-      <record javaclass="com.wm.util.Values">
         <value name="node_type">unknown</value>
         <value name="node_subtype">unknown</value>
         <value name="node_comment"></value>
@@ -1074,6 +1828,45 @@
         <value name="nillable">true</value>
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">stockCategory</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">expectedReceipt</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">lfx.commondatamodel.pub.doc.expectedreceipt:ExpectedReceipt</value>
       </record>
     </array>
     <value name="modifiable">true</value>
@@ -1136,19 +1929,6 @@
         <value name="is_global">false</value>
       </record>
       <record javaclass="com.wm.util.Values">
-        <value name="node_type">record</value>
-        <value name="node_subtype">unknown</value>
-        <value name="is_public">false</value>
-        <value name="field_name">expectedReceipt</value>
-        <value name="field_type">recref</value>
-        <value name="field_dim">0</value>
-        <value name="nillable">true</value>
-        <value name="form_qualified">false</value>
-        <value name="is_global">false</value>
-        <value name="modifiable">true</value>
-        <value name="rec_ref">lfx.commondatamodel.pub.doc.expectedreceipt:ExpectedReceipt</value>
-      </record>
-      <record javaclass="com.wm.util.Values">
         <value name="node_type">unknown</value>
         <value name="node_subtype">unknown</value>
         <value name="node_comment"></value>
@@ -1178,6 +1958,45 @@
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
       </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">stockCategory</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">expectedReceipt</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">lfx.commondatamodel.pub.doc.expectedreceipt:ExpectedReceipt</value>
+      </record>
     </array>
     <value name="modifiable">true</value>
   </record>
@@ -1185,80 +2004,6 @@
 </MAPSOURCE>
 
   <!-- nodes -->
-
-<MAPINVOKE SERVICE="lfx.valuemaptables.pub.service:cotyStockCategory" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
-
-  <!-- nodes -->
-
-<MAP MODE="INVOKEINPUT">
-
-  <!-- nodes -->
-
-<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/fieldName;1;0">
-  <DATA ENCODING="XMLValues" I18N="true">
-
-<Values version="2.0">
-  <value name="xml">StockCategory</value>
-  <record name="type" javaclass="com.wm.util.Values">
-    <value name="node_type">record</value>
-    <value name="node_subtype">unknown</value>
-    <value name="node_comment"></value>
-    <record name="node_hints" javaclass="com.wm.util.Values">
-      <value name="field_usereditable">true</value>
-      <value name="field_largerEditor">false</value>
-      <value name="field_password">false</value>
-    </record>
-    <value name="is_public">false</value>
-    <value name="field_name">fieldName</value>
-    <value name="field_type">string</value>
-    <value name="field_dim">0</value>
-    <array name="field_options" type="value" depth="1">
-    </array>
-    <value name="nillable">true</value>
-    <value name="form_qualified">false</value>
-    <value name="is_global">false</value>
-  </record>
-</Values>
-</DATA>
-</MAPSET>
-
-<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="true" GLOBALVARIABLES="false" FIELD="/where;1;0">
-  <DATA ENCODING="XMLValues" I18N="true">
-
-<Values version="2.0">
-  <value name="xml">StockType='B' and StorageLocation='%SHIPPING_ORDER_DOWNLOAD_IWAY_OUP/SHIPPING_ORDER_DOWNLOAD_IWAY_OUP/CTRL_SEG/StorageLoc%' </value>
-  <record name="type" javaclass="com.wm.util.Values">
-    <value name="node_type">record</value>
-    <value name="node_subtype">unknown</value>
-    <value name="node_comment"></value>
-    <record name="node_hints" javaclass="com.wm.util.Values">
-      <value name="field_usereditable">true</value>
-      <value name="field_largerEditor">false</value>
-      <value name="field_password">false</value>
-    </record>
-    <value name="is_public">false</value>
-    <value name="field_name">where</value>
-    <value name="field_type">string</value>
-    <value name="field_dim">0</value>
-    <array name="field_options" type="value" depth="1">
-    </array>
-    <value name="nillable">true</value>
-    <value name="form_qualified">false</value>
-    <value name="is_global">false</value>
-  </record>
-</Values>
-</DATA>
-</MAPSET>
-</MAP>
-
-<MAP MODE="INVOKEOUTPUT">
-
-  <!-- nodes -->
-
-<MAPCOPY FROM="/result;1;1" TO="/ns:StockCategory;1;0">
-</MAPCOPY>
-</MAP>
-</MAPINVOKE>
 
 <MAPCOPY FROM="/quantityUOM;1;0" TO="/expectedReceipt;4;0;lfx.commondatamodel.pub.doc.expectedreceipt:ExpectedReceipt/ns:ExpectedReceipt;2;0/ns:ReceiptItemDetails;2;0/ns:ReceiptLine[%index%];2;1/ns:QuantityUOM;1;0">
 </MAPCOPY>
@@ -1331,30 +2076,6 @@
         <value name="is_global">false</value>
       </record>
       <record javaclass="com.wm.util.Values">
-        <value name="node_type">record</value>
-        <value name="node_subtype">unknown</value>
-        <value name="is_public">false</value>
-        <value name="field_name">expectedReceipt</value>
-        <value name="field_type">recref</value>
-        <value name="field_dim">0</value>
-        <value name="nillable">true</value>
-        <value name="form_qualified">false</value>
-        <value name="is_global">false</value>
-        <value name="modifiable">true</value>
-        <value name="rec_ref">lfx.commondatamodel.pub.doc.expectedreceipt:ExpectedReceipt</value>
-      </record>
-      <record javaclass="com.wm.util.Values">
-        <value name="node_type">unknown</value>
-        <value name="node_subtype">unknown</value>
-        <value name="is_public">false</value>
-        <value name="field_name">ns:StockCategory</value>
-        <value name="field_type">string</value>
-        <value name="field_dim">0</value>
-        <value name="nillable">true</value>
-        <value name="form_qualified">false</value>
-        <value name="is_global">false</value>
-      </record>
-      <record javaclass="com.wm.util.Values">
         <value name="node_type">unknown</value>
         <value name="node_subtype">unknown</value>
         <value name="node_comment"></value>
@@ -1383,6 +2104,45 @@
         <value name="nillable">true</value>
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">stockCategory</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">expectedReceipt</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">lfx.commondatamodel.pub.doc.expectedreceipt:ExpectedReceipt</value>
       </record>
     </array>
     <value name="modifiable">true</value>
@@ -1445,30 +2205,6 @@
         <value name="is_global">false</value>
       </record>
       <record javaclass="com.wm.util.Values">
-        <value name="node_type">record</value>
-        <value name="node_subtype">unknown</value>
-        <value name="is_public">false</value>
-        <value name="field_name">expectedReceipt</value>
-        <value name="field_type">recref</value>
-        <value name="field_dim">0</value>
-        <value name="nillable">true</value>
-        <value name="form_qualified">false</value>
-        <value name="is_global">false</value>
-        <value name="modifiable">true</value>
-        <value name="rec_ref">lfx.commondatamodel.pub.doc.expectedreceipt:ExpectedReceipt</value>
-      </record>
-      <record javaclass="com.wm.util.Values">
-        <value name="node_type">unknown</value>
-        <value name="node_subtype">unknown</value>
-        <value name="is_public">false</value>
-        <value name="field_name">ns:StockCategory</value>
-        <value name="field_type">string</value>
-        <value name="field_dim">0</value>
-        <value name="nillable">true</value>
-        <value name="form_qualified">false</value>
-        <value name="is_global">false</value>
-      </record>
-      <record javaclass="com.wm.util.Values">
         <value name="node_type">unknown</value>
         <value name="node_subtype">unknown</value>
         <value name="node_comment"></value>
@@ -1498,6 +2234,45 @@
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
       </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">stockCategory</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">expectedReceipt</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">lfx.commondatamodel.pub.doc.expectedreceipt:ExpectedReceipt</value>
+      </record>
     </array>
     <value name="modifiable">true</value>
   </record>
@@ -1506,7 +2281,7 @@
 
   <!-- nodes -->
 
-<MAPCOPY FROM="/ns:StockCategory;1;0" TO="/expectedReceipt;4;0;lfx.commondatamodel.pub.doc.expectedreceipt:ExpectedReceipt/ns:ExpectedReceipt;2;0/ns:ReceiptItemDetails;2;0/ns:ReceiptLine[%index%];2;1/ns:StockCategory;1;0">
+<MAPCOPY FROM="/stockCategory;1;0" TO="/expectedReceipt;4;0;lfx.commondatamodel.pub.doc.expectedreceipt:ExpectedReceipt/ns:ExpectedReceipt;2;0/ns:ReceiptItemDetails;2;0/ns:ReceiptLine;2;1/ns:StockCategory;1;0">
 </MAPCOPY>
 </MAP>
 
@@ -1578,41 +2353,6 @@
         <value name="is_global">false</value>
       </record>
       <record javaclass="com.wm.util.Values">
-        <value name="node_type">record</value>
-        <value name="node_subtype">unknown</value>
-        <value name="is_public">false</value>
-        <value name="field_name">expectedReceipt</value>
-        <value name="field_type">recref</value>
-        <value name="field_dim">0</value>
-        <value name="nillable">true</value>
-        <value name="form_qualified">false</value>
-        <value name="is_global">false</value>
-        <value name="modifiable">true</value>
-        <value name="rec_ref">lfx.commondatamodel.pub.doc.expectedreceipt:ExpectedReceipt</value>
-      </record>
-      <record javaclass="com.wm.util.Values">
-        <value name="node_type">unknown</value>
-        <value name="node_subtype">unknown</value>
-        <value name="is_public">false</value>
-        <value name="field_name">ns:StockCategory</value>
-        <value name="field_type">string</value>
-        <value name="field_dim">0</value>
-        <value name="nillable">true</value>
-        <value name="form_qualified">false</value>
-        <value name="is_global">false</value>
-      </record>
-      <record javaclass="com.wm.util.Values">
-        <value name="node_type">unknown</value>
-        <value name="node_subtype">unknown</value>
-        <value name="is_public">false</value>
-        <value name="field_name">lineIndex</value>
-        <value name="field_type">string</value>
-        <value name="field_dim">0</value>
-        <value name="nillable">true</value>
-        <value name="form_qualified">false</value>
-        <value name="is_global">false</value>
-      </record>
-      <record javaclass="com.wm.util.Values">
         <value name="node_type">unknown</value>
         <value name="node_subtype">unknown</value>
         <value name="node_comment"></value>
@@ -1641,6 +2381,56 @@
         <value name="nillable">true</value>
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">lineIndex</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">stockCategory</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">expectedReceipt</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">lfx.commondatamodel.pub.doc.expectedreceipt:ExpectedReceipt</value>
       </record>
     </array>
     <value name="modifiable">true</value>
@@ -1703,30 +2493,6 @@
         <value name="is_global">false</value>
       </record>
       <record javaclass="com.wm.util.Values">
-        <value name="node_type">record</value>
-        <value name="node_subtype">unknown</value>
-        <value name="is_public">false</value>
-        <value name="field_name">expectedReceipt</value>
-        <value name="field_type">recref</value>
-        <value name="field_dim">0</value>
-        <value name="nillable">true</value>
-        <value name="form_qualified">false</value>
-        <value name="is_global">false</value>
-        <value name="modifiable">true</value>
-        <value name="rec_ref">lfx.commondatamodel.pub.doc.expectedreceipt:ExpectedReceipt</value>
-      </record>
-      <record javaclass="com.wm.util.Values">
-        <value name="node_type">unknown</value>
-        <value name="node_subtype">unknown</value>
-        <value name="is_public">false</value>
-        <value name="field_name">ns:StockCategory</value>
-        <value name="field_type">string</value>
-        <value name="field_dim">0</value>
-        <value name="nillable">true</value>
-        <value name="form_qualified">false</value>
-        <value name="is_global">false</value>
-      </record>
-      <record javaclass="com.wm.util.Values">
         <value name="node_type">unknown</value>
         <value name="node_subtype">unknown</value>
         <value name="node_comment"></value>
@@ -1755,6 +2521,45 @@
         <value name="nillable">true</value>
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">stockCategory</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">expectedReceipt</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">lfx.commondatamodel.pub.doc.expectedreceipt:ExpectedReceipt</value>
       </record>
     </array>
     <value name="modifiable">true</value>
@@ -1866,41 +2671,6 @@
         <value name="is_global">false</value>
       </record>
       <record javaclass="com.wm.util.Values">
-        <value name="node_type">record</value>
-        <value name="node_subtype">unknown</value>
-        <value name="is_public">false</value>
-        <value name="field_name">expectedReceipt</value>
-        <value name="field_type">recref</value>
-        <value name="field_dim">0</value>
-        <value name="nillable">true</value>
-        <value name="form_qualified">false</value>
-        <value name="is_global">false</value>
-        <value name="modifiable">true</value>
-        <value name="rec_ref">lfx.commondatamodel.pub.doc.expectedreceipt:ExpectedReceipt</value>
-      </record>
-      <record javaclass="com.wm.util.Values">
-        <value name="node_type">unknown</value>
-        <value name="node_subtype">unknown</value>
-        <value name="is_public">false</value>
-        <value name="field_name">ns:StockCategory</value>
-        <value name="field_type">string</value>
-        <value name="field_dim">0</value>
-        <value name="nillable">true</value>
-        <value name="form_qualified">false</value>
-        <value name="is_global">false</value>
-      </record>
-      <record javaclass="com.wm.util.Values">
-        <value name="node_type">unknown</value>
-        <value name="node_subtype">unknown</value>
-        <value name="is_public">false</value>
-        <value name="field_name">lineIndex</value>
-        <value name="field_type">string</value>
-        <value name="field_dim">0</value>
-        <value name="nillable">true</value>
-        <value name="form_qualified">false</value>
-        <value name="is_global">false</value>
-      </record>
-      <record javaclass="com.wm.util.Values">
         <value name="node_type">unknown</value>
         <value name="node_subtype">unknown</value>
         <value name="node_comment"></value>
@@ -1929,6 +2699,56 @@
         <value name="nillable">true</value>
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">lineIndex</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">stockCategory</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">expectedReceipt</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">lfx.commondatamodel.pub.doc.expectedreceipt:ExpectedReceipt</value>
       </record>
     </array>
     <value name="modifiable">true</value>
@@ -2077,41 +2897,6 @@
         <value name="is_global">false</value>
       </record>
       <record javaclass="com.wm.util.Values">
-        <value name="node_type">record</value>
-        <value name="node_subtype">unknown</value>
-        <value name="is_public">false</value>
-        <value name="field_name">expectedReceipt</value>
-        <value name="field_type">recref</value>
-        <value name="field_dim">0</value>
-        <value name="nillable">true</value>
-        <value name="form_qualified">false</value>
-        <value name="is_global">false</value>
-        <value name="modifiable">true</value>
-        <value name="rec_ref">lfx.commondatamodel.pub.doc.expectedreceipt:ExpectedReceipt</value>
-      </record>
-      <record javaclass="com.wm.util.Values">
-        <value name="node_type">unknown</value>
-        <value name="node_subtype">unknown</value>
-        <value name="is_public">false</value>
-        <value name="field_name">ns:StockCategory</value>
-        <value name="field_type">string</value>
-        <value name="field_dim">0</value>
-        <value name="nillable">true</value>
-        <value name="form_qualified">false</value>
-        <value name="is_global">false</value>
-      </record>
-      <record javaclass="com.wm.util.Values">
-        <value name="node_type">unknown</value>
-        <value name="node_subtype">unknown</value>
-        <value name="is_public">false</value>
-        <value name="field_name">lineIndex</value>
-        <value name="field_type">string</value>
-        <value name="field_dim">0</value>
-        <value name="nillable">true</value>
-        <value name="form_qualified">false</value>
-        <value name="is_global">false</value>
-      </record>
-      <record javaclass="com.wm.util.Values">
         <value name="node_type">unknown</value>
         <value name="node_subtype">unknown</value>
         <value name="node_comment"></value>
@@ -2140,6 +2925,56 @@
         <value name="nillable">true</value>
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">lineIndex</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">stockCategory</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">expectedReceipt</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">lfx.commondatamodel.pub.doc.expectedreceipt:ExpectedReceipt</value>
       </record>
     </array>
     <value name="modifiable">true</value>
@@ -2224,41 +3059,6 @@
         <value name="is_global">false</value>
       </record>
       <record javaclass="com.wm.util.Values">
-        <value name="node_type">record</value>
-        <value name="node_subtype">unknown</value>
-        <value name="is_public">false</value>
-        <value name="field_name">expectedReceipt</value>
-        <value name="field_type">recref</value>
-        <value name="field_dim">0</value>
-        <value name="nillable">true</value>
-        <value name="form_qualified">false</value>
-        <value name="is_global">false</value>
-        <value name="modifiable">true</value>
-        <value name="rec_ref">lfx.commondatamodel.pub.doc.expectedreceipt:ExpectedReceipt</value>
-      </record>
-      <record javaclass="com.wm.util.Values">
-        <value name="node_type">unknown</value>
-        <value name="node_subtype">unknown</value>
-        <value name="is_public">false</value>
-        <value name="field_name">ns:StockCategory</value>
-        <value name="field_type">string</value>
-        <value name="field_dim">0</value>
-        <value name="nillable">true</value>
-        <value name="form_qualified">false</value>
-        <value name="is_global">false</value>
-      </record>
-      <record javaclass="com.wm.util.Values">
-        <value name="node_type">unknown</value>
-        <value name="node_subtype">unknown</value>
-        <value name="is_public">false</value>
-        <value name="field_name">lineIndex</value>
-        <value name="field_type">string</value>
-        <value name="field_dim">0</value>
-        <value name="nillable">true</value>
-        <value name="form_qualified">false</value>
-        <value name="is_global">false</value>
-      </record>
-      <record javaclass="com.wm.util.Values">
         <value name="node_type">unknown</value>
         <value name="node_subtype">unknown</value>
         <value name="node_comment"></value>
@@ -2287,6 +3087,56 @@
         <value name="nillable">true</value>
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">lineIndex</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">stockCategory</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">expectedReceipt</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">lfx.commondatamodel.pub.doc.expectedreceipt:ExpectedReceipt</value>
       </record>
     </array>
     <value name="modifiable">true</value>
@@ -2459,23 +3309,29 @@
         <value name="is_global">false</value>
       </record>
       <record javaclass="com.wm.util.Values">
-        <value name="node_type">record</value>
+        <value name="node_type">unknown</value>
         <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
         <value name="is_public">false</value>
-        <value name="field_name">expectedReceipt</value>
-        <value name="field_type">recref</value>
+        <value name="field_name">quantityUOM</value>
+        <value name="field_type">string</value>
         <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
         <value name="nillable">true</value>
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
-        <value name="modifiable">true</value>
-        <value name="rec_ref">lfx.commondatamodel.pub.doc.expectedreceipt:ExpectedReceipt</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">unknown</value>
         <value name="node_subtype">unknown</value>
         <value name="is_public">false</value>
-        <value name="field_name">ns:StockCategory</value>
+        <value name="field_name">containsZero</value>
         <value name="field_type">string</value>
         <value name="field_dim">0</value>
         <value name="nillable">true</value>
@@ -2514,7 +3370,7 @@
           <value name="field_password">false</value>
         </record>
         <value name="is_public">false</value>
-        <value name="field_name">quantityUOM</value>
+        <value name="field_name">stockCategory</value>
         <value name="field_type">string</value>
         <value name="field_dim">0</value>
         <array name="field_options" type="value" depth="1">
@@ -2524,15 +3380,24 @@
         <value name="is_global">false</value>
       </record>
       <record javaclass="com.wm.util.Values">
-        <value name="node_type">unknown</value>
+        <value name="node_type">record</value>
         <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
         <value name="is_public">false</value>
-        <value name="field_name">containsZero</value>
-        <value name="field_type">string</value>
+        <value name="field_name">expectedReceipt</value>
+        <value name="field_type">recref</value>
         <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
         <value name="nillable">true</value>
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">lfx.commondatamodel.pub.doc.expectedreceipt:ExpectedReceipt</value>
       </record>
     </array>
     <value name="modifiable">true</value>
@@ -2546,9 +3411,6 @@
 </MAPDELETE>
 
 <MAPDELETE FIELD="/index;1;0">
-</MAPDELETE>
-
-<MAPDELETE FIELD="/ns:StockCategory;1;0">
 </MAPDELETE>
 
 <MAPDELETE FIELD="/languageCode;1;0">
@@ -2570,6 +3432,9 @@
 </MAPDELETE>
 
 <MAPDELETE FIELD="/SHIPPING_ORDER_DOWNLOAD_IWAY_OUP;4;0;wmio.b2b.coty.interfaces.common.doc:SHIPPING_ORDER_DOWNLOAD_IWAY_OUP">
+</MAPDELETE>
+
+<MAPDELETE FIELD="/stockCategory;1;0">
 </MAPDELETE>
 </MAP>
 </FLOW>
