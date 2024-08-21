@@ -1,0 +1,1263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <record name="record" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="node_nsName">wmio.b2b.coty.interfaces.common.doc:SHIP_CONFIRM_IWAY_IN</value>
+    <value name="node_pkg">B2B_COTY_wmio_Interfaces</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <value name="schemaDomain">V1_1</value>
+    <value name="originURI">file:///C:\Users\zz-jeysba\Documents\linfoxTestData\IWAY_v2\SHIP_CONFIRM_WMS-IWAY-SAP_INP - v09.xsd</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">SHIP_CONFIRM_IWAY_INP</value>
+        <value name="field_type">record</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">false</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <array name="rec_fields" type="record" depth="1">
+          <record javaclass="com.wm.util.Values">
+            <value name="node_type">record</value>
+            <value name="node_subtype">unknown</value>
+            <value name="is_public">false</value>
+            <value name="field_name">CTRL_SEG</value>
+            <value name="field_type">record</value>
+            <value name="field_dim">0</value>
+            <value name="nillable">false</value>
+            <value name="form_qualified">false</value>
+            <value name="is_global">false</value>
+            <array name="rec_fields" type="record" depth="1">
+              <record javaclass="com.wm.util.Values">
+                <value name="node_type">record</value>
+                <value name="node_subtype">unknown</value>
+                <value name="is_public">false</value>
+                <value name="field_name">TrnNam</value>
+                <value name="field_type">string</value>
+                <value name="field_dim">0</value>
+                <value name="field_opt">true</value>
+                <record name="field_content_type" javaclass="com.wm.util.Values">
+                  <value name="contentType">1</value>
+                  <value name="internalType">reference</value>
+                  <value name="dataTypeVersion">dtVersion2</value>
+                  <array name="targetNames" type="record" depth="1">
+                    <record javaclass="com.wm.util.Values">
+                      <value name="ncName">CTRL_SEG-TRNNAM_TYP</value>
+                    </record>
+                  </array>
+                  <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                  <value name="schemaDomain">V1_1</value>
+                </record>
+                <value name="nillable">false</value>
+                <value name="form_qualified">false</value>
+                <value name="is_global">false</value>
+              </record>
+              <record javaclass="com.wm.util.Values">
+                <value name="node_type">record</value>
+                <value name="node_subtype">unknown</value>
+                <value name="is_public">false</value>
+                <value name="field_name">TrnVer</value>
+                <value name="field_type">string</value>
+                <value name="field_dim">0</value>
+                <value name="field_opt">true</value>
+                <record name="field_content_type" javaclass="com.wm.util.Values">
+                  <value name="contentType">1</value>
+                  <value name="internalType">reference</value>
+                  <value name="dataTypeVersion">dtVersion2</value>
+                  <array name="targetNames" type="record" depth="1">
+                    <record javaclass="com.wm.util.Values">
+                      <value name="ncName">CTRL_SEG-TRNVER_TYP</value>
+                    </record>
+                  </array>
+                  <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                  <value name="schemaDomain">V1_1</value>
+                </record>
+                <value name="nillable">false</value>
+                <value name="form_qualified">false</value>
+                <value name="is_global">false</value>
+              </record>
+              <record javaclass="com.wm.util.Values">
+                <value name="node_type">record</value>
+                <value name="node_subtype">unknown</value>
+                <value name="is_public">false</value>
+                <value name="field_name">TrnTyp</value>
+                <value name="field_type">string</value>
+                <value name="field_dim">0</value>
+                <value name="field_opt">true</value>
+                <record name="field_content_type" javaclass="com.wm.util.Values">
+                  <value name="contentType">1</value>
+                  <value name="internalType">reference</value>
+                  <value name="dataTypeVersion">dtVersion2</value>
+                  <array name="targetNames" type="record" depth="1">
+                    <record javaclass="com.wm.util.Values">
+                      <value name="ncName">TRNTYP_TYP</value>
+                    </record>
+                  </array>
+                  <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                  <value name="schemaDomain">V1_1</value>
+                </record>
+                <value name="nillable">false</value>
+                <value name="form_qualified">false</value>
+                <value name="is_global">false</value>
+              </record>
+              <record javaclass="com.wm.util.Values">
+                <value name="node_type">record</value>
+                <value name="node_subtype">unknown</value>
+                <value name="is_public">false</value>
+                <value name="field_name">SapEnv</value>
+                <value name="field_type">string</value>
+                <value name="field_dim">0</value>
+                <value name="field_opt">true</value>
+                <record name="field_content_type" javaclass="com.wm.util.Values">
+                  <value name="contentType">1</value>
+                  <value name="internalType">reference</value>
+                  <value name="dataTypeVersion">dtVersion2</value>
+                  <array name="targetNames" type="record" depth="1">
+                    <record javaclass="com.wm.util.Values">
+                      <value name="ncName">SAP_ENV_TYP</value>
+                    </record>
+                  </array>
+                  <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                  <value name="schemaDomain">V1_1</value>
+                </record>
+                <value name="nillable">false</value>
+                <value name="form_qualified">false</value>
+                <value name="is_global">false</value>
+              </record>
+              <record javaclass="com.wm.util.Values">
+                <value name="node_type">record</value>
+                <value name="node_subtype">unknown</value>
+                <value name="is_public">false</value>
+                <value name="field_name">SAP_Plant_Id</value>
+                <value name="field_type">string</value>
+                <value name="field_dim">0</value>
+                <value name="field_opt">true</value>
+                <record name="field_content_type" javaclass="com.wm.util.Values">
+                  <value name="contentType">1</value>
+                  <value name="internalType">reference</value>
+                  <value name="dataTypeVersion">dtVersion2</value>
+                  <array name="targetNames" type="record" depth="1">
+                    <record javaclass="com.wm.util.Values">
+                      <value name="ncName">SAP_PLANT_ID_TYP</value>
+                    </record>
+                  </array>
+                  <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                  <value name="schemaDomain">V1_1</value>
+                </record>
+                <value name="nillable">false</value>
+                <value name="form_qualified">false</value>
+                <value name="is_global">false</value>
+              </record>
+              <record javaclass="com.wm.util.Values">
+                <value name="node_type">record</value>
+                <value name="node_subtype">unknown</value>
+                <value name="is_public">false</value>
+                <value name="field_name">SAP_Division</value>
+                <value name="field_type">string</value>
+                <value name="field_dim">0</value>
+                <value name="field_opt">true</value>
+                <record name="field_content_type" javaclass="com.wm.util.Values">
+                  <value name="contentType">1</value>
+                  <value name="internalType">reference</value>
+                  <value name="dataTypeVersion">dtVersion2</value>
+                  <array name="targetNames" type="record" depth="1">
+                    <record javaclass="com.wm.util.Values">
+                      <value name="ncName">SAP_DIVISION_TYP</value>
+                    </record>
+                  </array>
+                  <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                  <value name="schemaDomain">V1_1</value>
+                </record>
+                <value name="nillable">false</value>
+                <value name="form_qualified">false</value>
+                <value name="is_global">false</value>
+              </record>
+              <record javaclass="com.wm.util.Values">
+                <value name="node_type">record</value>
+                <value name="node_subtype">unknown</value>
+                <value name="is_public">false</value>
+                <value name="field_name">SHIPMENT_SEG</value>
+                <value name="field_type">record</value>
+                <value name="field_dim">0</value>
+                <value name="nillable">false</value>
+                <value name="form_qualified">false</value>
+                <value name="is_global">false</value>
+                <array name="rec_fields" type="record" depth="1">
+                  <record javaclass="com.wm.util.Values">
+                    <value name="node_type">record</value>
+                    <value name="node_subtype">unknown</value>
+                    <value name="is_public">false</value>
+                    <value name="field_name">ShipId</value>
+                    <value name="field_type">string</value>
+                    <value name="field_dim">0</value>
+                    <value name="field_opt">true</value>
+                    <record name="field_content_type" javaclass="com.wm.util.Values">
+                      <value name="contentType">1</value>
+                      <value name="internalType">reference</value>
+                      <value name="dataTypeVersion">dtVersion2</value>
+                      <array name="targetNames" type="record" depth="1">
+                        <record javaclass="com.wm.util.Values">
+                          <value name="ncName">SHIP_ID_TYP</value>
+                        </record>
+                      </array>
+                      <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                      <value name="schemaDomain">V1_1</value>
+                    </record>
+                    <value name="nillable">false</value>
+                    <value name="form_qualified">false</value>
+                    <value name="is_global">false</value>
+                  </record>
+                  <record javaclass="com.wm.util.Values">
+                    <value name="node_type">record</value>
+                    <value name="node_subtype">unknown</value>
+                    <value name="is_public">false</value>
+                    <value name="field_name">MultitruckInd</value>
+                    <value name="field_type">string</value>
+                    <value name="field_dim">0</value>
+                    <value name="field_opt">true</value>
+                    <record name="field_content_type" javaclass="com.wm.util.Values">
+                      <value name="contentType">1</value>
+                      <value name="internalType">reference</value>
+                      <value name="dataTypeVersion">dtVersion2</value>
+                      <array name="targetNames" type="record" depth="1">
+                        <record javaclass="com.wm.util.Values">
+                          <value name="ncName">MULTITRUCKTYP_TYP</value>
+                        </record>
+                      </array>
+                      <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                      <value name="schemaDomain">V1_1</value>
+                    </record>
+                    <value name="nillable">false</value>
+                    <value name="form_qualified">false</value>
+                    <value name="is_global">false</value>
+                  </record>
+                  <record javaclass="com.wm.util.Values">
+                    <value name="node_type">record</value>
+                    <value name="node_subtype">unknown</value>
+                    <value name="is_public">false</value>
+                    <value name="field_name">CarCod</value>
+                    <value name="field_type">string</value>
+                    <value name="field_dim">0</value>
+                    <value name="field_opt">true</value>
+                    <record name="field_content_type" javaclass="com.wm.util.Values">
+                      <value name="contentType">1</value>
+                      <value name="internalType">reference</value>
+                      <value name="dataTypeVersion">dtVersion2</value>
+                      <array name="targetNames" type="record" depth="1">
+                        <record javaclass="com.wm.util.Values">
+                          <value name="ncName">CARCOD_TYP</value>
+                        </record>
+                      </array>
+                      <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                      <value name="schemaDomain">V1_1</value>
+                    </record>
+                    <value name="nillable">false</value>
+                    <value name="form_qualified">false</value>
+                    <value name="is_global">false</value>
+                  </record>
+                  <record javaclass="com.wm.util.Values">
+                    <value name="node_type">record</value>
+                    <value name="node_subtype">unknown</value>
+                    <value name="is_public">false</value>
+                    <value name="field_name">CarTyp</value>
+                    <value name="field_type">string</value>
+                    <value name="field_dim">0</value>
+                    <value name="field_opt">true</value>
+                    <record name="field_content_type" javaclass="com.wm.util.Values">
+                      <value name="contentType">1</value>
+                      <value name="internalType">reference</value>
+                      <value name="dataTypeVersion">dtVersion2</value>
+                      <array name="targetNames" type="record" depth="1">
+                        <record javaclass="com.wm.util.Values">
+                          <value name="ncName">CARTYP_TYP</value>
+                        </record>
+                      </array>
+                      <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                      <value name="schemaDomain">V1_1</value>
+                    </record>
+                    <value name="nillable">false</value>
+                    <value name="form_qualified">false</value>
+                    <value name="is_global">false</value>
+                  </record>
+                  <record javaclass="com.wm.util.Values">
+                    <value name="node_type">record</value>
+                    <value name="node_subtype">unknown</value>
+                    <value name="is_public">false</value>
+                    <value name="field_name">CustTmsId</value>
+                    <value name="field_type">string</value>
+                    <value name="field_dim">0</value>
+                    <value name="field_opt">true</value>
+                    <record name="field_content_type" javaclass="com.wm.util.Values">
+                      <value name="contentType">1</value>
+                      <value name="internalType">reference</value>
+                      <value name="dataTypeVersion">dtVersion2</value>
+                      <array name="targetNames" type="record" depth="1">
+                        <record javaclass="com.wm.util.Values">
+                          <value name="ncName">CUST_TMS_ID_TYP</value>
+                        </record>
+                      </array>
+                      <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                      <value name="schemaDomain">V1_1</value>
+                    </record>
+                    <value name="nillable">false</value>
+                    <value name="form_qualified">false</value>
+                    <value name="is_global">false</value>
+                  </record>
+                  <record javaclass="com.wm.util.Values">
+                    <value name="node_type">record</value>
+                    <value name="node_subtype">unknown</value>
+                    <value name="is_public">false</value>
+                    <value name="field_name">TrlrId</value>
+                    <value name="field_type">string</value>
+                    <value name="field_dim">0</value>
+                    <value name="field_opt">true</value>
+                    <record name="field_content_type" javaclass="com.wm.util.Values">
+                      <value name="contentType">1</value>
+                      <value name="internalType">reference</value>
+                      <value name="dataTypeVersion">dtVersion2</value>
+                      <array name="targetNames" type="record" depth="1">
+                        <record javaclass="com.wm.util.Values">
+                          <value name="ncName">TRLR_ID_TYP</value>
+                        </record>
+                      </array>
+                      <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                      <value name="schemaDomain">V1_1</value>
+                    </record>
+                    <value name="nillable">false</value>
+                    <value name="form_qualified">false</value>
+                    <value name="is_global">false</value>
+                  </record>
+                  <record javaclass="com.wm.util.Values">
+                    <value name="node_type">record</value>
+                    <value name="node_subtype">unknown</value>
+                    <value name="is_public">false</value>
+                    <value name="field_name">TrlrNum</value>
+                    <value name="field_type">string</value>
+                    <value name="field_dim">0</value>
+                    <value name="field_opt">true</value>
+                    <record name="field_content_type" javaclass="com.wm.util.Values">
+                      <value name="contentType">1</value>
+                      <value name="internalType">reference</value>
+                      <value name="dataTypeVersion">dtVersion2</value>
+                      <array name="targetNames" type="record" depth="1">
+                        <record javaclass="com.wm.util.Values">
+                          <value name="ncName">TRLR_NUM_TYP</value>
+                        </record>
+                      </array>
+                      <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                      <value name="schemaDomain">V1_1</value>
+                    </record>
+                    <value name="nillable">false</value>
+                    <value name="form_qualified">false</value>
+                    <value name="is_global">false</value>
+                  </record>
+                  <record javaclass="com.wm.util.Values">
+                    <value name="node_type">record</value>
+                    <value name="node_subtype">unknown</value>
+                    <value name="is_public">false</value>
+                    <value name="field_name">TrlrSeal1</value>
+                    <value name="field_type">string</value>
+                    <value name="field_dim">0</value>
+                    <value name="field_opt">true</value>
+                    <record name="field_content_type" javaclass="com.wm.util.Values">
+                      <value name="contentType">1</value>
+                      <value name="internalType">reference</value>
+                      <value name="dataTypeVersion">dtVersion2</value>
+                      <array name="targetNames" type="record" depth="1">
+                        <record javaclass="com.wm.util.Values">
+                          <value name="ncName">TRLR_SEAL1_TYP</value>
+                        </record>
+                      </array>
+                      <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                      <value name="schemaDomain">V1_1</value>
+                    </record>
+                    <value name="nillable">false</value>
+                    <value name="form_qualified">false</value>
+                    <value name="is_global">false</value>
+                  </record>
+                  <record javaclass="com.wm.util.Values">
+                    <value name="node_type">record</value>
+                    <value name="node_subtype">unknown</value>
+                    <value name="is_public">false</value>
+                    <value name="field_name">TotCtn</value>
+                    <value name="field_type">string</value>
+                    <value name="field_dim">0</value>
+                    <value name="field_opt">true</value>
+                    <record name="field_content_type" javaclass="com.wm.util.Values">
+                      <value name="contentType">1</value>
+                      <value name="internalType">reference</value>
+                      <value name="dataTypeVersion">dtVersion2</value>
+                      <array name="targetNames" type="record" depth="1">
+                        <record javaclass="com.wm.util.Values">
+                          <value name="ncName">QTY_TYP</value>
+                        </record>
+                      </array>
+                      <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                      <value name="schemaDomain">V1_1</value>
+                    </record>
+                    <value name="nillable">false</value>
+                    <value name="form_qualified">false</value>
+                    <value name="is_global">false</value>
+                  </record>
+                  <record javaclass="com.wm.util.Values">
+                    <value name="node_type">record</value>
+                    <value name="node_subtype">unknown</value>
+                    <value name="is_public">false</value>
+                    <value name="field_name">TotPal</value>
+                    <value name="field_type">string</value>
+                    <value name="field_dim">0</value>
+                    <value name="field_opt">true</value>
+                    <record name="field_content_type" javaclass="com.wm.util.Values">
+                      <value name="contentType">1</value>
+                      <value name="internalType">reference</value>
+                      <value name="dataTypeVersion">dtVersion2</value>
+                      <array name="targetNames" type="record" depth="1">
+                        <record javaclass="com.wm.util.Values">
+                          <value name="ncName">QTY_TYP</value>
+                        </record>
+                      </array>
+                      <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                      <value name="schemaDomain">V1_1</value>
+                    </record>
+                    <value name="nillable">false</value>
+                    <value name="form_qualified">false</value>
+                    <value name="is_global">false</value>
+                  </record>
+                  <record javaclass="com.wm.util.Values">
+                    <value name="node_type">record</value>
+                    <value name="node_subtype">unknown</value>
+                    <value name="is_public">false</value>
+                    <value name="field_name">ProcessStatus</value>
+                    <value name="field_type">string</value>
+                    <value name="field_dim">0</value>
+                    <value name="field_opt">true</value>
+                    <record name="field_content_type" javaclass="com.wm.util.Values">
+                      <value name="contentType">1</value>
+                      <value name="internalType">reference</value>
+                      <value name="dataTypeVersion">dtVersion2</value>
+                      <array name="targetNames" type="record" depth="1">
+                        <record javaclass="com.wm.util.Values">
+                          <value name="ncName">PROCESSSTATUS_TYP</value>
+                        </record>
+                      </array>
+                      <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                      <value name="schemaDomain">V1_1</value>
+                    </record>
+                    <value name="nillable">false</value>
+                    <value name="form_qualified">false</value>
+                    <value name="is_global">false</value>
+                  </record>
+                  <record javaclass="com.wm.util.Values">
+                    <value name="node_type">record</value>
+                    <value name="node_subtype">unknown</value>
+                    <value name="is_public">false</value>
+                    <value name="field_name">PlannedDte</value>
+                    <value name="field_type">string</value>
+                    <value name="field_dim">0</value>
+                    <value name="field_opt">true</value>
+                    <record name="field_content_type" javaclass="com.wm.util.Values">
+                      <value name="contentType">1</value>
+                      <value name="internalType">reference</value>
+                      <value name="dataTypeVersion">dtVersion2</value>
+                      <array name="targetNames" type="record" depth="1">
+                        <record javaclass="com.wm.util.Values">
+                          <value name="ncName">DATETIME_TYP</value>
+                        </record>
+                      </array>
+                      <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                      <value name="schemaDomain">V1_1</value>
+                    </record>
+                    <value name="nillable">false</value>
+                    <value name="form_qualified">false</value>
+                    <value name="is_global">false</value>
+                  </record>
+                  <record javaclass="com.wm.util.Values">
+                    <value name="node_type">record</value>
+                    <value name="node_subtype">unknown</value>
+                    <value name="is_public">false</value>
+                    <value name="field_name">PickedDte</value>
+                    <value name="field_type">string</value>
+                    <value name="field_dim">0</value>
+                    <value name="field_opt">true</value>
+                    <record name="field_content_type" javaclass="com.wm.util.Values">
+                      <value name="contentType">1</value>
+                      <value name="internalType">reference</value>
+                      <value name="dataTypeVersion">dtVersion2</value>
+                      <array name="targetNames" type="record" depth="1">
+                        <record javaclass="com.wm.util.Values">
+                          <value name="ncName">DATETIME_TYP</value>
+                        </record>
+                      </array>
+                      <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                      <value name="schemaDomain">V1_1</value>
+                    </record>
+                    <value name="nillable">false</value>
+                    <value name="form_qualified">false</value>
+                    <value name="is_global">false</value>
+                  </record>
+                  <record javaclass="com.wm.util.Values">
+                    <value name="node_type">record</value>
+                    <value name="node_subtype">unknown</value>
+                    <value name="is_public">false</value>
+                    <value name="field_name">StagedDte</value>
+                    <value name="field_type">string</value>
+                    <value name="field_dim">0</value>
+                    <value name="field_opt">true</value>
+                    <record name="field_content_type" javaclass="com.wm.util.Values">
+                      <value name="contentType">1</value>
+                      <value name="internalType">reference</value>
+                      <value name="dataTypeVersion">dtVersion2</value>
+                      <array name="targetNames" type="record" depth="1">
+                        <record javaclass="com.wm.util.Values">
+                          <value name="ncName">DATETIME_TYP</value>
+                        </record>
+                      </array>
+                      <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                      <value name="schemaDomain">V1_1</value>
+                    </record>
+                    <value name="nillable">false</value>
+                    <value name="form_qualified">false</value>
+                    <value name="is_global">false</value>
+                  </record>
+                  <record javaclass="com.wm.util.Values">
+                    <value name="node_type">record</value>
+                    <value name="node_subtype">unknown</value>
+                    <value name="is_public">false</value>
+                    <value name="field_name">ShippedDte</value>
+                    <value name="field_type">string</value>
+                    <value name="field_dim">0</value>
+                    <value name="field_opt">true</value>
+                    <record name="field_content_type" javaclass="com.wm.util.Values">
+                      <value name="contentType">1</value>
+                      <value name="internalType">reference</value>
+                      <value name="dataTypeVersion">dtVersion2</value>
+                      <array name="targetNames" type="record" depth="1">
+                        <record javaclass="com.wm.util.Values">
+                          <value name="ncName">DATETIME_TYP</value>
+                        </record>
+                      </array>
+                      <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                      <value name="schemaDomain">V1_1</value>
+                    </record>
+                    <value name="nillable">false</value>
+                    <value name="form_qualified">false</value>
+                    <value name="is_global">false</value>
+                  </record>
+                  <record javaclass="com.wm.util.Values">
+                    <value name="node_type">record</value>
+                    <value name="node_subtype">unknown</value>
+                    <value name="is_public">false</value>
+                    <value name="field_name">BolNum</value>
+                    <value name="field_type">string</value>
+                    <value name="field_dim">0</value>
+                    <value name="field_opt">true</value>
+                    <record name="field_content_type" javaclass="com.wm.util.Values">
+                      <value name="contentType">1</value>
+                      <value name="internalType">reference</value>
+                      <value name="dataTypeVersion">dtVersion2</value>
+                      <array name="targetNames" type="record" depth="1">
+                        <record javaclass="com.wm.util.Values">
+                          <value name="ncName">BOLNUM_TYP</value>
+                        </record>
+                      </array>
+                      <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                      <value name="schemaDomain">V1_1</value>
+                    </record>
+                    <value name="nillable">false</value>
+                    <value name="form_qualified">false</value>
+                    <value name="is_global">false</value>
+                  </record>
+                  <record javaclass="com.wm.util.Values">
+                    <value name="node_type">record</value>
+                    <value name="node_subtype">unknown</value>
+                    <value name="is_public">false</value>
+                    <value name="field_name">ExternalShipInd</value>
+                    <value name="field_type">string</value>
+                    <value name="field_dim">0</value>
+                    <value name="field_opt">true</value>
+                    <record name="field_content_type" javaclass="com.wm.util.Values">
+                      <value name="contentType">1</value>
+                      <value name="internalType">reference</value>
+                      <value name="dataTypeVersion">dtVersion2</value>
+                      <array name="targetNames" type="record" depth="1">
+                        <record javaclass="com.wm.util.Values">
+                          <value name="ncName">FLG_TYP</value>
+                        </record>
+                      </array>
+                      <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                      <value name="schemaDomain">V1_1</value>
+                    </record>
+                    <value name="nillable">false</value>
+                    <value name="form_qualified">false</value>
+                    <value name="is_global">false</value>
+                  </record>
+                  <record javaclass="com.wm.util.Values">
+                    <value name="node_type">record</value>
+                    <value name="node_subtype">unknown</value>
+                    <value name="is_public">false</value>
+                    <value name="field_name">DELIVERY_SEG</value>
+                    <value name="field_type">record</value>
+                    <value name="field_dim">1</value>
+                    <value name="field_opt">true</value>
+                    <value name="nillable">false</value>
+                    <value name="form_qualified">false</value>
+                    <value name="is_global">false</value>
+                    <value name="is_soap_array_encoding_used">false</value>
+                    <array name="rec_fields" type="record" depth="1">
+                      <record javaclass="com.wm.util.Values">
+                        <value name="node_type">record</value>
+                        <value name="node_subtype">unknown</value>
+                        <value name="is_public">false</value>
+                        <value name="field_name">DlvNum</value>
+                        <value name="field_type">string</value>
+                        <value name="field_dim">0</value>
+                        <value name="field_opt">true</value>
+                        <record name="field_content_type" javaclass="com.wm.util.Values">
+                          <value name="contentType">1</value>
+                          <value name="internalType">reference</value>
+                          <value name="dataTypeVersion">dtVersion2</value>
+                          <array name="targetNames" type="record" depth="1">
+                            <record javaclass="com.wm.util.Values">
+                              <value name="ncName">DLVNUM_TYP</value>
+                            </record>
+                          </array>
+                          <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                          <value name="schemaDomain">V1_1</value>
+                        </record>
+                        <value name="nillable">false</value>
+                        <value name="form_qualified">false</value>
+                        <value name="is_global">false</value>
+                      </record>
+                      <record javaclass="com.wm.util.Values">
+                        <value name="node_type">record</value>
+                        <value name="node_subtype">unknown</value>
+                        <value name="is_public">false</value>
+                        <value name="field_name">ProNum</value>
+                        <value name="field_type">string</value>
+                        <value name="field_dim">0</value>
+                        <value name="field_opt">true</value>
+                        <record name="field_content_type" javaclass="com.wm.util.Values">
+                          <value name="contentType">1</value>
+                          <value name="internalType">reference</value>
+                          <value name="dataTypeVersion">dtVersion2</value>
+                          <array name="targetNames" type="record" depth="1">
+                            <record javaclass="com.wm.util.Values">
+                              <value name="ncName">TRAKNUM_TYP</value>
+                            </record>
+                          </array>
+                          <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                          <value name="schemaDomain">V1_1</value>
+                        </record>
+                        <value name="nillable">false</value>
+                        <value name="form_qualified">false</value>
+                        <value name="is_global">false</value>
+                      </record>
+                      <record javaclass="com.wm.util.Values">
+                        <value name="node_type">record</value>
+                        <value name="node_subtype">unknown</value>
+                        <value name="is_public">false</value>
+                        <value name="field_name">TotWgt</value>
+                        <value name="field_type">string</value>
+                        <value name="field_dim">0</value>
+                        <value name="field_opt">true</value>
+                        <record name="field_content_type" javaclass="com.wm.util.Values">
+                          <value name="contentType">1</value>
+                          <value name="internalType">reference</value>
+                          <value name="dataTypeVersion">dtVersion2</value>
+                          <array name="targetNames" type="record" depth="1">
+                            <record javaclass="com.wm.util.Values">
+                              <value name="ncName">DIMENSION_TYP</value>
+                            </record>
+                          </array>
+                          <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                          <value name="schemaDomain">V1_1</value>
+                        </record>
+                        <value name="nillable">false</value>
+                        <value name="form_qualified">false</value>
+                        <value name="is_global">false</value>
+                      </record>
+                      <record javaclass="com.wm.util.Values">
+                        <value name="node_type">record</value>
+                        <value name="node_subtype">unknown</value>
+                        <value name="is_public">false</value>
+                        <value name="field_name">WgtUoM</value>
+                        <value name="field_type">string</value>
+                        <value name="field_dim">0</value>
+                        <value name="field_opt">true</value>
+                        <record name="field_content_type" javaclass="com.wm.util.Values">
+                          <value name="contentType">1</value>
+                          <value name="internalType">reference</value>
+                          <value name="dataTypeVersion">dtVersion2</value>
+                          <array name="targetNames" type="record" depth="1">
+                            <record javaclass="com.wm.util.Values">
+                              <value name="ncName">UNIT_TYP</value>
+                            </record>
+                          </array>
+                          <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                          <value name="schemaDomain">V1_1</value>
+                        </record>
+                        <value name="nillable">false</value>
+                        <value name="form_qualified">false</value>
+                        <value name="is_global">false</value>
+                      </record>
+                      <record javaclass="com.wm.util.Values">
+                        <value name="node_type">record</value>
+                        <value name="node_subtype">unknown</value>
+                        <value name="is_public">false</value>
+                        <value name="field_name">TotVol</value>
+                        <value name="field_type">string</value>
+                        <value name="field_dim">0</value>
+                        <value name="field_opt">true</value>
+                        <record name="field_content_type" javaclass="com.wm.util.Values">
+                          <value name="contentType">1</value>
+                          <value name="internalType">reference</value>
+                          <value name="dataTypeVersion">dtVersion2</value>
+                          <array name="targetNames" type="record" depth="1">
+                            <record javaclass="com.wm.util.Values">
+                              <value name="ncName">DIMENSION_TYP</value>
+                            </record>
+                          </array>
+                          <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                          <value name="schemaDomain">V1_1</value>
+                        </record>
+                        <value name="nillable">false</value>
+                        <value name="form_qualified">false</value>
+                        <value name="is_global">false</value>
+                      </record>
+                      <record javaclass="com.wm.util.Values">
+                        <value name="node_type">record</value>
+                        <value name="node_subtype">unknown</value>
+                        <value name="is_public">false</value>
+                        <value name="field_name">VolUoM</value>
+                        <value name="field_type">string</value>
+                        <value name="field_dim">0</value>
+                        <value name="field_opt">true</value>
+                        <record name="field_content_type" javaclass="com.wm.util.Values">
+                          <value name="contentType">1</value>
+                          <value name="internalType">reference</value>
+                          <value name="dataTypeVersion">dtVersion2</value>
+                          <array name="targetNames" type="record" depth="1">
+                            <record javaclass="com.wm.util.Values">
+                              <value name="ncName">UNIT_TYP</value>
+                            </record>
+                          </array>
+                          <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                          <value name="schemaDomain">V1_1</value>
+                        </record>
+                        <value name="nillable">false</value>
+                        <value name="form_qualified">false</value>
+                        <value name="is_global">false</value>
+                      </record>
+                      <record javaclass="com.wm.util.Values">
+                        <value name="node_type">record</value>
+                        <value name="node_subtype">unknown</value>
+                        <value name="is_public">false</value>
+                        <value name="field_name">SHIPMENT_LINE_SEG</value>
+                        <value name="field_type">record</value>
+                        <value name="field_dim">1</value>
+                        <value name="field_opt">true</value>
+                        <value name="nillable">false</value>
+                        <value name="form_qualified">false</value>
+                        <value name="is_global">false</value>
+                        <value name="is_soap_array_encoding_used">false</value>
+                        <array name="rec_fields" type="record" depth="1">
+                          <record javaclass="com.wm.util.Values">
+                            <value name="node_type">record</value>
+                            <value name="node_subtype">unknown</value>
+                            <value name="is_public">false</value>
+                            <value name="field_name">DlvLin</value>
+                            <value name="field_type">string</value>
+                            <value name="field_dim">0</value>
+                            <value name="field_opt">true</value>
+                            <record name="field_content_type" javaclass="com.wm.util.Values">
+                              <value name="contentType">1</value>
+                              <value name="internalType">reference</value>
+                              <value name="dataTypeVersion">dtVersion2</value>
+                              <array name="targetNames" type="record" depth="1">
+                                <record javaclass="com.wm.util.Values">
+                                  <value name="ncName">DLVLIN_TYP</value>
+                                </record>
+                              </array>
+                              <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                              <value name="schemaDomain">V1_1</value>
+                            </record>
+                            <value name="nillable">false</value>
+                            <value name="form_qualified">false</value>
+                            <value name="is_global">false</value>
+                          </record>
+                          <record javaclass="com.wm.util.Values">
+                            <value name="node_type">record</value>
+                            <value name="node_subtype">unknown</value>
+                            <value name="is_public">false</value>
+                            <value name="field_name">MaterialNumber</value>
+                            <value name="field_type">string</value>
+                            <value name="field_dim">0</value>
+                            <value name="field_opt">true</value>
+                            <record name="field_content_type" javaclass="com.wm.util.Values">
+                              <value name="contentType">1</value>
+                              <value name="internalType">reference</value>
+                              <value name="dataTypeVersion">dtVersion2</value>
+                              <array name="targetNames" type="record" depth="1">
+                                <record javaclass="com.wm.util.Values">
+                                  <value name="ncName">MATERIALNUMBER_TYP</value>
+                                </record>
+                              </array>
+                              <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                              <value name="schemaDomain">V1_1</value>
+                            </record>
+                            <value name="nillable">false</value>
+                            <value name="form_qualified">false</value>
+                            <value name="is_global">false</value>
+                          </record>
+                          <record javaclass="com.wm.util.Values">
+                            <value name="node_type">record</value>
+                            <value name="node_subtype">unknown</value>
+                            <value name="is_public">false</value>
+                            <value name="field_name">ShpQty</value>
+                            <value name="field_type">string</value>
+                            <value name="field_dim">0</value>
+                            <value name="field_opt">true</value>
+                            <record name="field_content_type" javaclass="com.wm.util.Values">
+                              <value name="contentType">1</value>
+                              <value name="internalType">reference</value>
+                              <value name="dataTypeVersion">dtVersion2</value>
+                              <array name="targetNames" type="record" depth="1">
+                                <record javaclass="com.wm.util.Values">
+                                  <value name="ncName">QTY_TYP</value>
+                                </record>
+                              </array>
+                              <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                              <value name="schemaDomain">V1_1</value>
+                            </record>
+                            <value name="nillable">false</value>
+                            <value name="form_qualified">false</value>
+                            <value name="is_global">false</value>
+                          </record>
+                          <record javaclass="com.wm.util.Values">
+                            <value name="node_type">record</value>
+                            <value name="node_subtype">unknown</value>
+                            <value name="is_public">false</value>
+                            <value name="field_name">BatchNumber</value>
+                            <value name="field_type">string</value>
+                            <value name="field_dim">0</value>
+                            <value name="field_opt">true</value>
+                            <record name="field_content_type" javaclass="com.wm.util.Values">
+                              <value name="contentType">1</value>
+                              <value name="internalType">reference</value>
+                              <value name="dataTypeVersion">dtVersion2</value>
+                              <array name="targetNames" type="record" depth="1">
+                                <record javaclass="com.wm.util.Values">
+                                  <value name="ncName">BATCHNUMBER_TYP</value>
+                                </record>
+                              </array>
+                              <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                              <value name="schemaDomain">V1_1</value>
+                            </record>
+                            <value name="nillable">false</value>
+                            <value name="form_qualified">false</value>
+                            <value name="is_global">false</value>
+                          </record>
+                        </array>
+                        <value name="rec_closed">true</value>
+                        <value name="modifiable">true</value>
+                      </record>
+                      <record javaclass="com.wm.util.Values">
+                        <value name="node_type">record</value>
+                        <value name="node_subtype">unknown</value>
+                        <value name="is_public">false</value>
+                        <value name="field_name">HU_SEG</value>
+                        <value name="field_type">record</value>
+                        <value name="field_dim">1</value>
+                        <value name="field_opt">true</value>
+                        <value name="nillable">false</value>
+                        <value name="form_qualified">false</value>
+                        <value name="is_global">false</value>
+                        <value name="is_soap_array_encoding_used">false</value>
+                        <array name="rec_fields" type="record" depth="1">
+                          <record javaclass="com.wm.util.Values">
+                            <value name="node_type">record</value>
+                            <value name="node_subtype">unknown</value>
+                            <value name="is_public">false</value>
+                            <value name="field_name">PackMat</value>
+                            <value name="field_type">string</value>
+                            <value name="field_dim">0</value>
+                            <value name="field_opt">true</value>
+                            <record name="field_content_type" javaclass="com.wm.util.Values">
+                              <value name="contentType">1</value>
+                              <value name="internalType">reference</value>
+                              <value name="dataTypeVersion">dtVersion2</value>
+                              <array name="targetNames" type="record" depth="1">
+                                <record javaclass="com.wm.util.Values">
+                                  <value name="ncName">PACKMAT_TYP</value>
+                                </record>
+                              </array>
+                              <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                              <value name="schemaDomain">V1_1</value>
+                            </record>
+                            <value name="nillable">false</value>
+                            <value name="form_qualified">false</value>
+                            <value name="is_global">false</value>
+                          </record>
+                          <record javaclass="com.wm.util.Values">
+                            <value name="node_type">record</value>
+                            <value name="node_subtype">unknown</value>
+                            <value name="is_public">false</value>
+                            <value name="field_name">SubUcc</value>
+                            <value name="field_type">string</value>
+                            <value name="field_dim">0</value>
+                            <value name="field_opt">true</value>
+                            <record name="field_content_type" javaclass="com.wm.util.Values">
+                              <value name="contentType">1</value>
+                              <value name="internalType">reference</value>
+                              <value name="dataTypeVersion">dtVersion2</value>
+                              <array name="targetNames" type="record" depth="1">
+                                <record javaclass="com.wm.util.Values">
+                                  <value name="ncName">SSCC18_TYP</value>
+                                </record>
+                              </array>
+                              <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                              <value name="schemaDomain">V1_1</value>
+                            </record>
+                            <value name="nillable">false</value>
+                            <value name="form_qualified">false</value>
+                            <value name="is_global">false</value>
+                          </record>
+                          <record javaclass="com.wm.util.Values">
+                            <value name="node_type">record</value>
+                            <value name="node_subtype">unknown</value>
+                            <value name="is_public">false</value>
+                            <value name="field_name">AltHuNumber</value>
+                            <value name="field_type">string</value>
+                            <value name="field_dim">0</value>
+                            <value name="field_opt">true</value>
+                            <record name="field_content_type" javaclass="com.wm.util.Values">
+                              <value name="contentType">1</value>
+                              <value name="internalType">reference</value>
+                              <value name="dataTypeVersion">dtVersion2</value>
+                              <array name="targetNames" type="record" depth="1">
+                                <record javaclass="com.wm.util.Values">
+                                  <value name="ncName">SSCC18_TYP</value>
+                                </record>
+                              </array>
+                              <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                              <value name="schemaDomain">V1_1</value>
+                            </record>
+                            <value name="nillable">false</value>
+                            <value name="form_qualified">false</value>
+                            <value name="is_global">false</value>
+                          </record>
+                          <record javaclass="com.wm.util.Values">
+                            <value name="node_type">record</value>
+                            <value name="node_subtype">unknown</value>
+                            <value name="is_public">false</value>
+                            <value name="field_name">TrakNum</value>
+                            <value name="field_type">string</value>
+                            <value name="field_dim">0</value>
+                            <value name="field_opt">true</value>
+                            <record name="field_content_type" javaclass="com.wm.util.Values">
+                              <value name="contentType">1</value>
+                              <value name="internalType">reference</value>
+                              <value name="dataTypeVersion">dtVersion2</value>
+                              <array name="targetNames" type="record" depth="1">
+                                <record javaclass="com.wm.util.Values">
+                                  <value name="ncName">TRAKNUM_TYP</value>
+                                </record>
+                              </array>
+                              <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                              <value name="schemaDomain">V1_1</value>
+                            </record>
+                            <value name="nillable">false</value>
+                            <value name="form_qualified">false</value>
+                            <value name="is_global">false</value>
+                          </record>
+                          <record javaclass="com.wm.util.Values">
+                            <value name="node_type">record</value>
+                            <value name="node_subtype">unknown</value>
+                            <value name="is_public">false</value>
+                            <value name="field_name">HuWgt</value>
+                            <value name="field_type">string</value>
+                            <value name="field_dim">0</value>
+                            <value name="field_opt">true</value>
+                            <record name="field_content_type" javaclass="com.wm.util.Values">
+                              <value name="contentType">1</value>
+                              <value name="internalType">reference</value>
+                              <value name="dataTypeVersion">dtVersion2</value>
+                              <array name="targetNames" type="record" depth="1">
+                                <record javaclass="com.wm.util.Values">
+                                  <value name="ncName">DIMENSION_TYP</value>
+                                </record>
+                              </array>
+                              <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                              <value name="schemaDomain">V1_1</value>
+                            </record>
+                            <value name="nillable">false</value>
+                            <value name="form_qualified">false</value>
+                            <value name="is_global">false</value>
+                          </record>
+                          <record javaclass="com.wm.util.Values">
+                            <value name="node_type">record</value>
+                            <value name="node_subtype">unknown</value>
+                            <value name="is_public">false</value>
+                            <value name="field_name">HuWgtUoM</value>
+                            <value name="field_type">string</value>
+                            <value name="field_dim">0</value>
+                            <value name="field_opt">true</value>
+                            <record name="field_content_type" javaclass="com.wm.util.Values">
+                              <value name="contentType">1</value>
+                              <value name="internalType">reference</value>
+                              <value name="dataTypeVersion">dtVersion2</value>
+                              <array name="targetNames" type="record" depth="1">
+                                <record javaclass="com.wm.util.Values">
+                                  <value name="ncName">UNIT_TYP</value>
+                                </record>
+                              </array>
+                              <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                              <value name="schemaDomain">V1_1</value>
+                            </record>
+                            <value name="nillable">false</value>
+                            <value name="form_qualified">false</value>
+                            <value name="is_global">false</value>
+                          </record>
+                          <record javaclass="com.wm.util.Values">
+                            <value name="node_type">record</value>
+                            <value name="node_subtype">unknown</value>
+                            <value name="is_public">false</value>
+                            <value name="field_name">HuVol</value>
+                            <value name="field_type">string</value>
+                            <value name="field_dim">0</value>
+                            <value name="field_opt">true</value>
+                            <record name="field_content_type" javaclass="com.wm.util.Values">
+                              <value name="contentType">1</value>
+                              <value name="internalType">reference</value>
+                              <value name="dataTypeVersion">dtVersion2</value>
+                              <array name="targetNames" type="record" depth="1">
+                                <record javaclass="com.wm.util.Values">
+                                  <value name="ncName">DIMENSION_TYP</value>
+                                </record>
+                              </array>
+                              <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                              <value name="schemaDomain">V1_1</value>
+                            </record>
+                            <value name="nillable">false</value>
+                            <value name="form_qualified">false</value>
+                            <value name="is_global">false</value>
+                          </record>
+                          <record javaclass="com.wm.util.Values">
+                            <value name="node_type">record</value>
+                            <value name="node_subtype">unknown</value>
+                            <value name="is_public">false</value>
+                            <value name="field_name">HuVolUoM</value>
+                            <value name="field_type">string</value>
+                            <value name="field_dim">0</value>
+                            <value name="field_opt">true</value>
+                            <record name="field_content_type" javaclass="com.wm.util.Values">
+                              <value name="contentType">1</value>
+                              <value name="internalType">reference</value>
+                              <value name="dataTypeVersion">dtVersion2</value>
+                              <array name="targetNames" type="record" depth="1">
+                                <record javaclass="com.wm.util.Values">
+                                  <value name="ncName">UNIT_TYP</value>
+                                </record>
+                              </array>
+                              <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                              <value name="schemaDomain">V1_1</value>
+                            </record>
+                            <value name="nillable">false</value>
+                            <value name="form_qualified">false</value>
+                            <value name="is_global">false</value>
+                          </record>
+                          <record javaclass="com.wm.util.Values">
+                            <value name="node_type">record</value>
+                            <value name="node_subtype">unknown</value>
+                            <value name="is_public">false</value>
+                            <value name="field_name">HU_DETAIL_SEG</value>
+                            <value name="field_type">record</value>
+                            <value name="field_dim">1</value>
+                            <value name="field_opt">true</value>
+                            <value name="nillable">false</value>
+                            <value name="form_qualified">false</value>
+                            <value name="is_global">false</value>
+                            <value name="is_soap_array_encoding_used">false</value>
+                            <array name="rec_fields" type="record" depth="1">
+                              <record javaclass="com.wm.util.Values">
+                                <value name="node_type">record</value>
+                                <value name="node_subtype">unknown</value>
+                                <value name="is_public">false</value>
+                                <value name="field_name">LodUcc</value>
+                                <value name="field_type">string</value>
+                                <value name="field_dim">0</value>
+                                <value name="field_opt">true</value>
+                                <record name="field_content_type" javaclass="com.wm.util.Values">
+                                  <value name="contentType">1</value>
+                                  <value name="internalType">reference</value>
+                                  <value name="dataTypeVersion">dtVersion2</value>
+                                  <array name="targetNames" type="record" depth="1">
+                                    <record javaclass="com.wm.util.Values">
+                                      <value name="ncName">SSCC18_TYP</value>
+                                    </record>
+                                  </array>
+                                  <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                                  <value name="schemaDomain">V1_1</value>
+                                </record>
+                                <value name="nillable">false</value>
+                                <value name="form_qualified">false</value>
+                                <value name="is_global">false</value>
+                              </record>
+                              <record javaclass="com.wm.util.Values">
+                                <value name="node_type">record</value>
+                                <value name="node_subtype">unknown</value>
+                                <value name="is_public">false</value>
+                                <value name="field_name">DlvNum</value>
+                                <value name="field_type">string</value>
+                                <value name="field_dim">0</value>
+                                <value name="field_opt">true</value>
+                                <record name="field_content_type" javaclass="com.wm.util.Values">
+                                  <value name="contentType">1</value>
+                                  <value name="internalType">reference</value>
+                                  <value name="dataTypeVersion">dtVersion2</value>
+                                  <array name="targetNames" type="record" depth="1">
+                                    <record javaclass="com.wm.util.Values">
+                                      <value name="ncName">DLVNUM_TYP</value>
+                                    </record>
+                                  </array>
+                                  <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                                  <value name="schemaDomain">V1_1</value>
+                                </record>
+                                <value name="nillable">false</value>
+                                <value name="form_qualified">false</value>
+                                <value name="is_global">false</value>
+                              </record>
+                              <record javaclass="com.wm.util.Values">
+                                <value name="node_type">record</value>
+                                <value name="node_subtype">unknown</value>
+                                <value name="is_public">false</value>
+                                <value name="field_name">DlvLin</value>
+                                <value name="field_type">string</value>
+                                <value name="field_dim">0</value>
+                                <value name="field_opt">true</value>
+                                <record name="field_content_type" javaclass="com.wm.util.Values">
+                                  <value name="contentType">1</value>
+                                  <value name="internalType">reference</value>
+                                  <value name="dataTypeVersion">dtVersion2</value>
+                                  <array name="targetNames" type="record" depth="1">
+                                    <record javaclass="com.wm.util.Values">
+                                      <value name="ncName">DLVLIN_TYP</value>
+                                    </record>
+                                  </array>
+                                  <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                                  <value name="schemaDomain">V1_1</value>
+                                </record>
+                                <value name="nillable">false</value>
+                                <value name="form_qualified">false</value>
+                                <value name="is_global">false</value>
+                              </record>
+                              <record javaclass="com.wm.util.Values">
+                                <value name="node_type">record</value>
+                                <value name="node_subtype">unknown</value>
+                                <value name="is_public">false</value>
+                                <value name="field_name">MaterialNumber</value>
+                                <value name="field_type">string</value>
+                                <value name="field_dim">0</value>
+                                <value name="field_opt">true</value>
+                                <record name="field_content_type" javaclass="com.wm.util.Values">
+                                  <value name="contentType">1</value>
+                                  <value name="internalType">reference</value>
+                                  <value name="dataTypeVersion">dtVersion2</value>
+                                  <array name="targetNames" type="record" depth="1">
+                                    <record javaclass="com.wm.util.Values">
+                                      <value name="ncName">MATERIALNUMBER_TYP</value>
+                                    </record>
+                                  </array>
+                                  <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                                  <value name="schemaDomain">V1_1</value>
+                                </record>
+                                <value name="nillable">false</value>
+                                <value name="form_qualified">false</value>
+                                <value name="is_global">false</value>
+                              </record>
+                              <record javaclass="com.wm.util.Values">
+                                <value name="node_type">record</value>
+                                <value name="node_subtype">unknown</value>
+                                <value name="is_public">false</value>
+                                <value name="field_name">BatchNumber</value>
+                                <value name="field_type">string</value>
+                                <value name="field_dim">0</value>
+                                <value name="field_opt">true</value>
+                                <record name="field_content_type" javaclass="com.wm.util.Values">
+                                  <value name="contentType">1</value>
+                                  <value name="internalType">reference</value>
+                                  <value name="dataTypeVersion">dtVersion2</value>
+                                  <array name="targetNames" type="record" depth="1">
+                                    <record javaclass="com.wm.util.Values">
+                                      <value name="ncName">BATCHNUMBER_TYP</value>
+                                    </record>
+                                  </array>
+                                  <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                                  <value name="schemaDomain">V1_1</value>
+                                </record>
+                                <value name="nillable">false</value>
+                                <value name="form_qualified">false</value>
+                                <value name="is_global">false</value>
+                              </record>
+                              <record javaclass="com.wm.util.Values">
+                                <value name="node_type">record</value>
+                                <value name="node_subtype">unknown</value>
+                                <value name="is_public">false</value>
+                                <value name="field_name">UntQty</value>
+                                <value name="field_type">string</value>
+                                <value name="field_dim">0</value>
+                                <value name="field_opt">true</value>
+                                <record name="field_content_type" javaclass="com.wm.util.Values">
+                                  <value name="contentType">1</value>
+                                  <value name="internalType">reference</value>
+                                  <value name="dataTypeVersion">dtVersion2</value>
+                                  <array name="targetNames" type="record" depth="1">
+                                    <record javaclass="com.wm.util.Values">
+                                      <value name="ncName">QTY_TYP</value>
+                                    </record>
+                                  </array>
+                                  <value name="targetOwnerNSName">wmio.b2b.coty.interfaces.common.doc:schema_SHIP_CONFIRM_IWAY_IN</value>
+                                  <value name="schemaDomain">V1_1</value>
+                                </record>
+                                <value name="nillable">false</value>
+                                <value name="form_qualified">false</value>
+                                <value name="is_global">false</value>
+                              </record>
+                            </array>
+                            <value name="rec_closed">true</value>
+                            <value name="modifiable">true</value>
+                          </record>
+                        </array>
+                        <value name="rec_closed">true</value>
+                        <value name="modifiable">true</value>
+                      </record>
+                    </array>
+                    <value name="rec_closed">true</value>
+                    <value name="modifiable">true</value>
+                  </record>
+                </array>
+                <value name="rec_closed">true</value>
+                <value name="modifiable">true</value>
+              </record>
+            </array>
+            <value name="rec_closed">true</value>
+            <value name="modifiable">true</value>
+          </record>
+        </array>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+      </record>
+    </array>
+    <value name="modifiable">false</value>
+    <value name="LOCK_REQUIRED">true</value>
+  </record>
+</Values>
