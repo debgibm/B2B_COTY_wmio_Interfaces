@@ -6,7 +6,7 @@
   <!-- nodes -->
 
 <INVOKE TIMEOUT="" SERVICE="pub.io:bytesToStream" VALIDATE-IN="$none" VALIDATE-OUT="$none">
-  <COMMENT></COMMENT>
+  <COMMENT>===Updated to receive wm.io B2B content in byte format===</COMMENT>
 
   <!-- nodes -->
 
